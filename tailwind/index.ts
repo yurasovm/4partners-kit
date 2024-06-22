@@ -1,8 +1,14 @@
 import typographyPlugin from './plugins/typography';
 
-export default () => {
+let defConfig = {
+	content : [],
+}
+
+export default ( config ) => {
+	config = { ...defConfig, config };
+
 	return {
-		content: [],
+		content: config.content,
 		theme: {
 		},
 		plugins: [
