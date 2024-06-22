@@ -5,12 +5,11 @@ let defConfig = {
 }
 
 export default ( config ) => {
-	config = { ...defConfig, config };
+	config = { ...defConfig, ...config };
 
 	return {
 		content: config.content,
-		theme: {
-		},
+		theme: {},
 		plugins: [
 			typographyPlugin
 		],

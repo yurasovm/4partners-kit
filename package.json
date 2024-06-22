@@ -8,5 +8,8 @@
 	},
 	"private": true,
 	"author": "Yurasovm",
-	"license": "MIT"
+	"license": "MIT",
+	"peerDependencies": {
+		"tailwindcss": "^3"
+	}
 }
