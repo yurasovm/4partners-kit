@@ -1,6 +1,6 @@
-import typographyPlugin from './plugins/typography';
+import typographyUtilitiesPlugin from './plugins/typography.ts';
 
-let defConfig = {
+const defConfig = {
 	content : [],
 }
 
@@ -11,7 +11,7 @@ export default ( config = {} ) => {
 		content: config.content,
 		theme: {},
 		plugins: [
-			typographyPlugin
+			typographyUtilitiesPlugin
 		],
 	}
 }
