@@ -4,7 +4,7 @@ let defConfig = {
 	content : [],
 }
 
-export default ( config ) => {
+export default ( config = {} ) => {
 	config = { ...defConfig, ...config };
 
 	return {

@@ -1,1 +1,1 @@
-export { default as createTailwindConfig } from './tailwind';
+export { default as createTailwindConfig } from './tailwind/index';

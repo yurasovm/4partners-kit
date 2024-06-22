@@ -1,6 +1,5 @@
-import plugin from 'tailwindcss/plugin';
-import json from './typography.json';
+import json from './typography.json' assert { type: 'json' };
 
-export default plugin(function({ addUtilities }) {
+export default function({ addUtilities }) {
 	addUtilities( json )
-});
+}
