@@ -1,0 +1,22 @@
+{
+	"name": "@4partners/kit",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+	  "build": "npm run build:js && npm run build:css",
+	  "build:js": "babel src -d dist",
+	  "build:css": "tailwindcss build src/tailwind/tailwind.config.js -o dist/tailwind.css"
+	},
+	"files": [
+	  "dist",
+	  "src"
+	],
+	"dependencies": {
+	},
+	"devDependencies": {
+	},
+	"private": true,
+	"author": "Yurasovm",
+	"license": "MIT"
+}
