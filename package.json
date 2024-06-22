@@ -2,15 +2,15 @@
 	"name": "@4partners/kit",
 	"version": "1.0.0",
 	"description": "",
-	"main": "dist/index.js",
+	"main": "index.ts",
+	"type": "module",
 	"scripts": {
 	  "build": "npm run build:js && npm run build:css",
 	  "build:js": "babel src -d dist",
 	  "build:css": "tailwindcss build src/tailwind/tailwind.config.js -o dist/tailwind.css"
 	},
 	"files": [
-	  "dist",
-	  "src"
+	  "tailwind"
 	],
 	"dependencies": {
 	},
