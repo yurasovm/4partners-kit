@@ -1,5 +1,5 @@
-export default const colors = {
-    'primary-core': 'rgb(var(--primary-core) / 1)',
+export default {
+    'primary-core': 'rgb(var(--primary-core ) / 1)',
     'primary-chroma': 'rgb(var(--primary-chroma) / 1)',
     'primary-dim': 'rgb(var(--primary-dim) / 1)',
     'primary-on': 'rgb(var(--primary-on) / 1)',

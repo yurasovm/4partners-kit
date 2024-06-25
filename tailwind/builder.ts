@@ -10,11 +10,11 @@ export default class TailwindConfigBuilder {
 	}
 
 	setColors( colorsConfig ) {
-		this.theme.colors = colorsConfig;
+		this.config.theme.colors = colorsConfig;
 	}
 
 	setExtend( extendConfig ) {
-		this.theme.extend = extendConfig;
+		this.config.theme.extend = extendConfig;
 	}
 
 	setContent(contentConfig) {
