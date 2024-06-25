@@ -1,17 +1,14 @@
+
+import TailwindConfigBuilder from './builder.ts';
 import typographyUtilitiesPlugin from './plugins/typography.ts';
+import colorsConfig from './theme/colors.ts';
 
-const defConfig = {
-	content : [],
-}
+export default ( customizer ) => {
+	const builder = new TailwindConfigBuilder();
 
-export default ( config = {} ) => {
-	config = { ...defConfig, ...config };
+	builder.setColors( colorsConfig );
+	builder.addPlugin( typographyUtilitiesPlugin );
 
-	return {
-		content: config.content,
-		theme: {},
-		plugins: [
-			typographyUtilitiesPlugin
-		],
-	}
+	customizer( builder );
+	return builder.build();
 }
