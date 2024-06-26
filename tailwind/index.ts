@@ -3,7 +3,7 @@ import TailwindConfigBuilder from './builder.ts';
 import colorsConfig from './theme/colors.ts';
 import typographyUtilitiesPlugin from './plugins/typography.ts';
 import roundedUtilitiesPlugin from './plugins/rounded.ts';
-import borderRadiusConfig from './rounded-classes.json' assert { type: 'json' };
+import borderRadiusConfig from './plugins/rounded-classes.json' assert { type: 'json' };
 
 export default ( customizer ) => {
 	const builder = new TailwindConfigBuilder();
