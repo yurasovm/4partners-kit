@@ -95,6 +95,7 @@ export default {
     'surface-on-low': 'rgb(var(--surface-on-low) / 1)',
     'surface-on-lowest': 'rgb(var(--surface-on-lowest) / 1)',
     'surface-on-accent': 'rgb(var(--surface-on-accent) / 1)',
+    'surface-surface-transparent': 'rgb(var(--surface-surface-transparent) / 0)',
     'inverse-surface-bright': 'rgb(var(--inverse-surface-bright) / 1)',
     'inverse-surface-surface': 'rgb(var(--inverse-surface-surface) / 1)',
     'inverse-surface-dim': 'rgb(var(--inverse-surface-dim) / 1)',
