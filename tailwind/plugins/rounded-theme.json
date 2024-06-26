@@ -1,0 +1,38 @@
+{
+  ":root": {
+    "--rounded-200": "0rem",
+    "--rounded-300": "0rem",
+    "--rounded-400": "0rem",
+    "--rounded-500": "0rem",
+    "--rounded-600": "0rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  },
+  ".theme-rounded-none": {
+    "--rounded-200": "0rem",
+    "--rounded-300": "0rem",
+    "--rounded-400": "0rem",
+    "--rounded-500": "0rem",
+    "--rounded-600": "0rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  },
+  ".theme-rounded": {
+    "--rounded-200": "37.5rem",
+    "--rounded-300": "37.5rem",
+    "--rounded-400": "37.5rem",
+    "--rounded-500": "37.5rem",
+    "--rounded-600": "37.5rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  },
+  ".theme-rounded-smooth": {
+    "--rounded-200": "0.25rem",
+    "--rounded-300": "0.375rem",
+    "--rounded-400": "0.5rem",
+    "--rounded-500": "0.625rem",
+    "--rounded-600": "0.75rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  }
+}
