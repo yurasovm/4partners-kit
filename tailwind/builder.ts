@@ -13,6 +13,10 @@ export default class TailwindConfigBuilder {
 		this.config.theme.colors = colorsConfig;
 	}
 
+	setBorderRadius( borderRadiusConfig ) {
+		this.config.theme.borderRadius = borderRadiusConfig;
+	}
+
 	setExtend( extendConfig ) {
 		this.config.theme.extend = extendConfig;
 	}
