@@ -18,11 +18,11 @@
     "--rounded-none": "0rem"
   },
   ".theme-rounded": {
-    "--rounded-200": "37.5rem",
-    "--rounded-300": "37.5rem",
-    "--rounded-400": "37.5rem",
-    "--rounded-500": "37.5rem",
-    "--rounded-600": "37.5rem",
+    "--rounded-200": "1.625rem",
+    "--rounded-300": "1.625rem",
+    "--rounded-400": "1.625rem",
+    "--rounded-500": "1.625rem",
+    "--rounded-600": "1.625rem",
     "--rounded-full": "37.5rem",
     "--rounded-none": "0rem"
   },
