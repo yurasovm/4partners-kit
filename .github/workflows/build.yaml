@@ -75,6 +75,15 @@ jobs:
         git merge --allow-unrelated-histories --no-ff origin/parser -m "Automated build"
         git push origin master
 
+        # Проверяем, был ли пуш успешным
+        if [ $? -eq 0 ]; then
+          echo "Push successful. Deleting parser branch."
+          git push origin --delete parser
+        else
+          echo "Push failed. Not deleting parser branch."
+          exit 1
+        fi
+
     - name: Telegram notif
       run: |
         text=$'✅ Update UIKit'
