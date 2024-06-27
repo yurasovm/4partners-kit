@@ -3,6 +3,7 @@ import tvConfig from '../../../tv-configs/button.json';
 import type { IconType } from '../../../types/icon.ts';
 import Icon from '../icon/Icon.tsx';
 import { cn } from '../../../helpers/tailwind.ts';
+import React from 'react';
 
 const tvButton = tv(tvConfig);
 
