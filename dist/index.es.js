@@ -3281,7 +3281,11 @@ const Gt = Mt(Vt), {
       className: ue(Nt(i), s),
       children: [
         o && /* @__PURE__ */ Z.jsx("span", { className: ue(fr(i), Dt(i)), children: /* @__PURE__ */ Z.jsx(mr, { className: ue(pr(i)), name: o, size: 24 }) }),
-        r && /* @__PURE__ */ Z.jsx("span", { className: ue(Lt(i)), children: r }),
+        r && /* @__PURE__ */ Z.jsxs("span", { className: ue(Lt(i)), children: [
+          "= ",
+          r,
+          " ="
+        ] }),
         d && /* @__PURE__ */ Z.jsx("span", { className: ue(fr(i), Ut(i)), children: /* @__PURE__ */ Z.jsx(mr, { className: ue(pr(i)), name: d, size: 24 }) })
       ]
     }

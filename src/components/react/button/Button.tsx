@@ -56,7 +56,7 @@ export default ({
 
 			{
 				label &&
-				<span className={ cn( slotLabel( slotsProps ) ) }>{ label }</span>
+				<span className={ cn( slotLabel( slotsProps ) ) }>= { label } =</span>
 			}
 
 			{
