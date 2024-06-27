@@ -68,20 +68,6 @@ jobs:
           -d "$json" \
           https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/editMessageText
 
-    - name: Final
-      run: |
-        # Set the required variables
-        repo_owner="yurasovm"
-        repo_name="4p-uikit-storybook"
-        event_type="trigger-workflow"
-
-        curl -L \
-          -X POST \
-          -H "Accept: application/vnd.github+json" \
-          -H "X-GitHub-Api-Version: 2022-11-28" \
-          -H "Authorization: Bearer ${{ secrets.PAT_4P }}" \
-          https://api.github.com/repos/$repo_owner/$repo_name/dispatches \
-          -d "{\"event_type\": \"$event_type\" }"
     - name: Telegram notification error
       if: failure()
       run: |
