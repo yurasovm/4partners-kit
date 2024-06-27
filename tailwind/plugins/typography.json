@@ -1,5 +1,8 @@
 {
   ".title-1": {
+    "fontSize": "2.125rem",
+    "lineHeight": "2.5rem",
+    "letterSpacing": "-0.10000000149011612rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "2.5rem",
       "lineHeight": "3rem",
@@ -9,12 +12,12 @@
       "fontSize": "2.5rem",
       "lineHeight": "3rem",
       "letterSpacing": "-0.125rem"
-    },
-    "fontSize": "2.125rem",
-    "lineHeight": "2.5rem",
-    "letterSpacing": "-0.10000000149011612rem"
+    }
   },
   ".title-2": {
+    "fontSize": "1.75rem",
+    "lineHeight": "2rem",
+    "letterSpacing": "-0.07500000298023224rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "2rem",
       "lineHeight": "2.25rem",
@@ -24,12 +27,12 @@
       "fontSize": "2.125rem",
       "lineHeight": "2.5rem",
       "letterSpacing": "-0.10000000149011612rem"
-    },
-    "fontSize": "1.75rem",
-    "lineHeight": "2rem",
-    "letterSpacing": "-0.07500000298023224rem"
+    }
   },
   ".title-3": {
+    "fontSize": "1.375rem",
+    "lineHeight": "1.625rem",
+    "letterSpacing": "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.5rem",
       "lineHeight": "1.75rem",
@@ -39,12 +42,12 @@
       "fontSize": "1.75rem",
       "lineHeight": "2rem",
       "letterSpacing": "-0.07500000298023224rem"
-    },
-    "fontSize": "1.375rem",
-    "lineHeight": "1.625rem",
-    "letterSpacing": "-0.0625rem"
+    }
   },
   ".title-4": {
+    "fontSize": "1.25rem",
+    "lineHeight": "1.5rem",
+    "letterSpacing": "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.25rem",
       "lineHeight": "1.5rem",
@@ -54,12 +57,12 @@
       "fontSize": "1.5rem",
       "lineHeight": "1.75rem",
       "letterSpacing": "-0.0625rem"
-    },
-    "fontSize": "1.25rem",
-    "lineHeight": "1.5rem",
-    "letterSpacing": "-0.0625rem"
+    }
   },
   ".title-5": {
+    "fontSize": "1.0625rem",
+    "lineHeight": "1.25rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.0625rem",
       "lineHeight": "1.25rem",
@@ -69,12 +72,12 @@
       "fontSize": "1.125rem",
       "lineHeight": "1.375rem",
       "letterSpacing": "-0.0625rem"
-    },
-    "fontSize": "1.0625rem",
-    "lineHeight": "1.25rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".heading-1": {
+    "fontSize": "1.25rem",
+    "lineHeight": "1.5rem",
+    "letterSpacing": "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.5rem",
       "lineHeight": "1.75rem",
@@ -84,12 +87,12 @@
       "fontSize": "2rem",
       "lineHeight": "2.25rem",
       "letterSpacing": "-0.0625rem"
-    },
-    "fontSize": "1.25rem",
-    "lineHeight": "1.5rem",
-    "letterSpacing": "-0.0625rem"
+    }
   },
   ".heading-2": {
+    "fontSize": "1.125rem",
+    "lineHeight": "1.375rem",
+    "letterSpacing": "-0.02500000037252903rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.25rem",
       "lineHeight": "1.5rem",
@@ -99,12 +102,12 @@
       "fontSize": "1.25rem",
       "lineHeight": "1.5rem",
       "letterSpacing": "-0.05000000074505806rem"
-    },
-    "fontSize": "1.125rem",
-    "lineHeight": "1.375rem",
-    "letterSpacing": "-0.02500000037252903rem"
+    }
   },
   ".heading-3": {
+    "fontSize": "1.0625rem",
+    "lineHeight": "1.25rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.0625rem",
       "lineHeight": "1.25rem",
@@ -114,27 +117,27 @@
       "fontSize": "1.125rem",
       "lineHeight": "1.375rem",
       "letterSpacing": "-0.02500000037252903rem"
-    },
-    "fontSize": "1.0625rem",
-    "lineHeight": "1.25rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".heading-4": {
-    "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
-      "fontSize": "1rem",
-      "lineHeight": "1.25rem",
-      "letterSpacing": "0rem"
-    },
-    "@media screen and (min-width: 64.0625rem)": {
-      "fontSize": "1rem",
-      "lineHeight": "1.25rem",
-      "letterSpacing": "0rem"
-    },
     "fontSize": "1rem",
     "lineHeight": "1.25rem",
-    "letterSpacing": "0rem"
+    "letterSpacing": "0rem",
+    "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
+      "fontSize": "1rem",
+      "lineHeight": "1.25rem",
+      "letterSpacing": "0rem"
+    },
+    "@media screen and (min-width: 64.0625rem)": {
+      "fontSize": "1rem",
+      "lineHeight": "1.25rem",
+      "letterSpacing": "0rem"
+    }
   },
   ".heading-5": {
+    "fontSize": "0.875rem",
+    "lineHeight": "1.0625rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "0.875rem",
       "lineHeight": "1.0625rem",
@@ -144,12 +147,12 @@
       "fontSize": "0.875rem",
       "lineHeight": "1.0625rem",
       "letterSpacing": "0rem"
-    },
-    "fontSize": "0.875rem",
-    "lineHeight": "1.0625rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".display-1": {
+    "fontSize": "3rem",
+    "lineHeight": "3.625rem",
+    "letterSpacing": "-0.10000000149011612rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "4rem",
       "lineHeight": "4.75rem",
@@ -159,12 +162,12 @@
       "fontSize": "4.375rem",
       "lineHeight": "5.25rem",
       "letterSpacing": "-0.125rem"
-    },
-    "fontSize": "3rem",
-    "lineHeight": "3.625rem",
-    "letterSpacing": "-0.10000000149011612rem"
+    }
   },
   ".display-2": {
+    "fontSize": "2.5rem",
+    "lineHeight": "3rem",
+    "letterSpacing": "-0.07500000298023224rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "3.625rem",
       "lineHeight": "4.375rem",
@@ -174,12 +177,12 @@
       "fontSize": "4rem",
       "lineHeight": "4.75rem",
       "letterSpacing": "-0.16249999403953552rem"
-    },
-    "fontSize": "2.5rem",
-    "lineHeight": "3rem",
-    "letterSpacing": "-0.07500000298023224rem"
+    }
   },
   ".display-3": {
+    "fontSize": "2.125rem",
+    "lineHeight": "2.5rem",
+    "letterSpacing": "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "3.25rem",
       "lineHeight": "3.875rem",
@@ -189,12 +192,12 @@
       "fontSize": "3.625rem",
       "lineHeight": "4.375rem",
       "letterSpacing": "-0.07500000298023224rem"
-    },
-    "fontSize": "2.125rem",
-    "lineHeight": "2.5rem",
-    "letterSpacing": "-0.0625rem"
+    }
   },
   ".display-4": {
+    "fontSize": "2rem",
+    "lineHeight": "2.25rem",
+    "letterSpacing": "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "3rem",
       "lineHeight": "3.625rem",
@@ -204,12 +207,12 @@
       "fontSize": "3.25rem",
       "lineHeight": "3.875rem",
       "letterSpacing": "-0.0625rem"
-    },
-    "fontSize": "2rem",
-    "lineHeight": "2.25rem",
-    "letterSpacing": "-0.0625rem"
+    }
   },
   ".display-5": {
+    "fontSize": "1.75rem",
+    "lineHeight": "2rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "2.5rem",
       "lineHeight": "3rem",
@@ -219,27 +222,27 @@
       "fontSize": "3rem",
       "lineHeight": "3.625rem",
       "letterSpacing": "-0.0625rem"
-    },
-    "fontSize": "1.75rem",
-    "lineHeight": "2rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".body-50": {
-    "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
-      "fontSize": "0.625rem",
-      "lineHeight": "0.875rem",
-      "letterSpacing": "0.05000000074505806rem"
-    },
-    "@media screen and (min-width: 64.0625rem)": {
-      "fontSize": "0.625rem",
-      "lineHeight": "0.875rem",
-      "letterSpacing": "0.05000000074505806rem"
-    },
     "fontSize": "0.625rem",
     "lineHeight": "0.875rem",
-    "letterSpacing": "0.05000000074505806rem"
+    "letterSpacing": "0.05000000074505806rem",
+    "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
+      "fontSize": "0.625rem",
+      "lineHeight": "0.875rem",
+      "letterSpacing": "0.05000000074505806rem"
+    },
+    "@media screen and (min-width: 64.0625rem)": {
+      "fontSize": "0.625rem",
+      "lineHeight": "0.875rem",
+      "letterSpacing": "0.05000000074505806rem"
+    }
   },
   ".body-100": {
+    "fontSize": "0.6875rem",
+    "lineHeight": "0.9624999761581421rem",
+    "letterSpacing": "0.05000000074505806rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "0.6875rem",
       "lineHeight": "0.9375rem",
@@ -249,12 +252,12 @@
       "fontSize": "0.6875rem",
       "lineHeight": "0.9375rem",
       "letterSpacing": "0.05000000074505806rem"
-    },
-    "fontSize": "0.6875rem",
-    "lineHeight": "0.9624999761581421rem",
-    "letterSpacing": "0.05000000074505806rem"
+    }
   },
   ".body-200": {
+    "fontSize": "0.75rem",
+    "lineHeight": "1.0625rem",
+    "letterSpacing": "0.05000000074505806rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "0.75rem",
       "lineHeight": "1.0625rem",
@@ -264,12 +267,12 @@
       "fontSize": "0.75rem",
       "lineHeight": "1.0625rem",
       "letterSpacing": "0.02500000037252903rem"
-    },
-    "fontSize": "0.75rem",
-    "lineHeight": "1.0625rem",
-    "letterSpacing": "0.05000000074505806rem"
+    }
   },
   ".body-300": {
+    "fontSize": "0.75rem",
+    "lineHeight": "1.0625rem",
+    "letterSpacing": "0.05000000074505806rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "0.75rem",
       "lineHeight": "1.0625rem",
@@ -279,12 +282,12 @@
       "fontSize": "0.8125rem",
       "lineHeight": "1.125rem",
       "letterSpacing": "0.02500000037252903rem"
-    },
-    "fontSize": "0.75rem",
-    "lineHeight": "1.0625rem",
-    "letterSpacing": "0.05000000074505806rem"
+    }
   },
   ".body-400": {
+    "fontSize": "0.75rem",
+    "lineHeight": "1.0625rem",
+    "letterSpacing": "0.02500000037252903rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "0.8125rem",
       "lineHeight": "1.125rem",
@@ -294,12 +297,12 @@
       "fontSize": "0.875rem",
       "lineHeight": "1.25rem",
       "letterSpacing": "0rem"
-    },
-    "fontSize": "0.75rem",
-    "lineHeight": "1.0625rem",
-    "letterSpacing": "0.02500000037252903rem"
+    }
   },
   ".body-500": {
+    "fontSize": "0.8125rem",
+    "lineHeight": "1.125rem",
+    "letterSpacing": "0.02500000037252903rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "0.875rem",
       "lineHeight": "1.25rem",
@@ -309,12 +312,12 @@
       "fontSize": "0.9375rem",
       "lineHeight": "1.375rem",
       "letterSpacing": "0rem"
-    },
-    "fontSize": "0.8125rem",
-    "lineHeight": "1.125rem",
-    "letterSpacing": "0.02500000037252903rem"
+    }
   },
   ".body-600": {
+    "fontSize": "0.875rem",
+    "lineHeight": "1.25rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "0.9375rem",
       "lineHeight": "1.375rem",
@@ -324,12 +327,12 @@
       "fontSize": "1rem",
       "lineHeight": "1.375rem",
       "letterSpacing": "0rem"
-    },
-    "fontSize": "0.875rem",
-    "lineHeight": "1.25rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".body-700": {
+    "fontSize": "0.9375rem",
+    "lineHeight": "1.375rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1rem",
       "lineHeight": "1.375rem",
@@ -339,12 +342,12 @@
       "fontSize": "1.0625rem",
       "lineHeight": "1.5rem",
       "letterSpacing": "0rem"
-    },
-    "fontSize": "0.9375rem",
-    "lineHeight": "1.375rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".body-800": {
+    "fontSize": "1rem",
+    "lineHeight": "1.375rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.0625rem",
       "lineHeight": "1.5rem",
@@ -354,12 +357,12 @@
       "fontSize": "1.125rem",
       "lineHeight": "1.625rem",
       "letterSpacing": "-0.02500000037252903rem"
-    },
-    "fontSize": "1rem",
-    "lineHeight": "1.375rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".body-900": {
+    "fontSize": "1.0625rem",
+    "lineHeight": "1.5rem",
+    "letterSpacing": "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       "fontSize": "1.125rem",
       "lineHeight": "1.625rem",
@@ -369,10 +372,7 @@
       "fontSize": "1.25rem",
       "lineHeight": "1.75rem",
       "letterSpacing": "-0.05000000074505806rem"
-    },
-    "fontSize": "1.0625rem",
-    "lineHeight": "1.5rem",
-    "letterSpacing": "0rem"
+    }
   },
   ".control-1000": {
     "fontSize": "2rem"
