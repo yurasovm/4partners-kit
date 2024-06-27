@@ -1,4 +1,4 @@
-import roundedTheme from './configs/rounded-theme.json' assert { type: 'json' };
+import roundedTheme from '../configs/theme-rounded.json' assert { type: 'json' };
 
 export default ({ addComponents }) => {
 	addComponents( roundedTheme );

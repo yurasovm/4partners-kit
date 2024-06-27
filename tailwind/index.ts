@@ -7,7 +7,7 @@ import roundedUtilitiesPlugin from './plugins/rounded.ts';
 
 // Configs
 import borderRadiusConfig from './plugins/configs/border-radius.json' assert { type: 'json' };
-import colorsConfig from './theme/colors.ts';
+import colorsConfig from './plugins/configs/colors.json';
 
 export default ( customizer ) => {
 	const builder = new TailwindConfigBuilder();
