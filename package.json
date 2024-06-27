@@ -3,13 +3,14 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.ts",
+	"module": "index.ts",
 	"type": "module",
 	"scripts": {},
 	"private": true,
 	"author": "Yurasovm",
 	"license": "MIT",
 	"exports": {
-		".": "./src/index.js",
+		".": "./index.ts",
 		"./react": "./src/components/react/index.ts",
 		"./vanilla": "./src/components/vanilla/index.js",
 		"./config": "./src/tv-config/index.js"
