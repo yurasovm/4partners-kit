@@ -52,20 +52,12 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout parser
-        git add .
-        git commit --allow-empty -m "Automated build"
-        # git push origin master --force
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Automated PR - Update build
-        title: Automated PR - Update build
-        body: |
-          This PR was automatically generated to update the build output.
-        branch: parser
-        base: master
+        git checkout master
+        # git add .
+        # git commit --allow-empty -m "Automated build"
+        # # git push origin master --force
+        git merge --no-ff parser -m "Automated build"
+        git push origin master
 
     - name: Telegram notif
       run: |
