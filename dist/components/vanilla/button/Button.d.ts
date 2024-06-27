@@ -1,1 +1,1 @@
-export declare function makeButton(config: any): string;
+export declare function makeButton(props: any): string;
