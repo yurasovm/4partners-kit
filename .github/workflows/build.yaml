@@ -64,18 +64,15 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-    - name: Check and create master branch if not exists
+    - name: Checkout and setup master branch
       run: |
-        if ! git ls-remote --exit-code --heads origin master; then
-          git checkout -b master
-          git push -u origin master
-        else
-          git checkout master
-        fi
+        git fetch origin
+        git checkout -B master origin/master || git checkout -b master
+        git pull origin master || true
 
     - name: Merge parser into master
       run: |
-        git merge --no-ff parser -m "Automated build"
+        git merge --no-ff origin/parser -m "Automated build"
         git push origin master
 
     - name: Telegram notif
