@@ -1,0 +1,11 @@
+{
+	"rules": {
+	  "import/extensions": [
+		"error",
+		"ignorePackages",
+		{
+		  "json": "always"
+		}
+	  ]
+	}
+  }

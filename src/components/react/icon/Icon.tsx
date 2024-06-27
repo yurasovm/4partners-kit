@@ -1,7 +1,8 @@
-import type { IconType } from '../../types/icon.ts';
+// import type { IconType } from '../../../types/icon';
+import React from 'react';
 
 interface IconProps {
-  name: IconType;
+  name: string;
   size: number;
   className?:string;
 }

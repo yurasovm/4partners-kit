@@ -1,2 +1,2 @@
-import json from '../configs/typography.json' assert { type: 'json' };
+import json from '../configs/typography.json';
 export default ({ addUtilities }) => addUtilities( json );

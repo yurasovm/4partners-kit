@@ -2,22 +2,24 @@
 	"name": "@4partners/kit",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.ts",
-	"module": "index.ts",
+	"main": "dist/index.umd.js",
+	"module": "dist/index.es.js",
+	"types": "dist/index.d.ts",
 	"type": "module",
-	"scripts": {},
+	"files": [
+		"dist",
+		"dist/tv-configs"
+	],
+	"scripts": {
+		"build": "vite build"
+	},
 	"private": true,
 	"author": "Yurasovm",
 	"license": "MIT",
-	"exports": {
-		".": "./index.ts",
-		"./react": "./src/components/react/index.ts",
-		"./vanilla": "./src/components/vanilla/index.js",
-		"./config": "./src/tv-config/index.js"
-	},
 	"peerDependencies": {
 		"react": "^17.0.0 || ^18.0.0",
-		"tailwindcss": "^3"
+		"react-dom": "^17.0.0 || ^18.0.0",
+		"tailwindcss": "^3.4.4"
 	},
 	"peerDependenciesMeta": {
 		"react": {
@@ -25,12 +27,17 @@
 		}
 	},
 	"dependencies": {
+		"autoprefixer": "^10.4.19",
 		"clsx": "^2.1.1",
+		"postcss": "^8.4.38",
 		"tailwind-merge": "^2.3.0",
 		"tailwind-variants": "^0.2.1"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.0",
-		"typescript": "^4.0.0"
+		"@vitejs/plugin-react": "^4.3.1",
+		"tslib": "^2.6.3",
+		"typescript": "^4.9.5",
+		"vite-plugin-dts": "^3.9.1"
 	}
 }
