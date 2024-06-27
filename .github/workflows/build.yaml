@@ -48,14 +48,33 @@ jobs:
     - name: Build the project
       run: npm run build
 
-    - name: Commit build output to build branch
+    # - name: Commit build output to build branch
+    #   run: |
+    #     git config --global user.name 'github-actions[bot]'
+    #     git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+    #     git checkout master
+    #     # git add .
+    #     # git commit --allow-empty -m "Automated build"
+    #     # # git push origin master --force
+    #     git merge --no-ff parser -m "Automated build"
+    #     git push origin master
+
+    - name: Configure Git
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout master
-        # git add .
-        # git commit --allow-empty -m "Automated build"
-        # # git push origin master --force
+
+    - name: Check and create master branch if not exists
+      run: |
+        if ! git ls-remote --exit-code --heads origin master; then
+          git checkout -b master
+          git push -u origin master
+        else
+          git checkout master
+        fi
+
+    - name: Merge parser into master
+      run: |
         git merge --no-ff parser -m "Automated build"
         git push origin master
 
