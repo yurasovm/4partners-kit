@@ -72,7 +72,7 @@ jobs:
 
     - name: Merge parser into master
       run: |
-        git merge --no-ff origin/parser -m "Automated build"
+        git merge --allow-unrelated-histories --no-ff origin/parser -m "Automated build"
         git push origin master
 
     - name: Telegram notif
