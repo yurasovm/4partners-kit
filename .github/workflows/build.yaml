@@ -1,0 +1,91 @@
+name: Build Static Files
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    branches: [ "master" ]
+  repository_dispatch:
+    types: [trigger-workflow]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Telegram notif
+      run: |
+        curl -X POST \
+          -H 'Content-Type: application/json' \
+          -d '{"chat_id": "${{ secrets.TELEGRAM_ID }}", "text": "⏱️ Update UIKit"}' \
+          https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage > ./pr.json
+          message_id=$(jq -r '.result.message_id' ./pr.json)
+          echo "MESSAGE_ID='${message_id}'" >> $GITHUB_ENV
+    - name: Set up SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+    - name: Test SSH Connection
+      run: ssh -T git@github.com || true
+
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref: master
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      run: npm run build
+
+    - name: Commit build output to build branch
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git checkout -b build
+        git add .
+        git commit -m "Automated build"
+        git push origin build --force
+
+    - name: Telegram notif
+      run: |
+        text=$'✅ Update UIKit'
+        json=$(jq -anc --arg chatId ${{ secrets.TELEGRAM_ID }} --arg messageId ${{ env.MESSAGE_ID }} --arg text "$text" '{"chat_id": $chatId, "message_id": $messageId, "text": $text}')
+        curl -X POST \
+          -H 'Content-Type: application/json' \
+          -d "$json" \
+          https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/editMessageText
+
+    - name: Final
+      run: |
+        # Set the required variables
+        repo_owner="yurasovm"
+        repo_name="4p-uikit-storybook"
+        event_type="trigger-workflow"
+
+        curl -L \
+          -X POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          -H "Authorization: Bearer ${{ secrets.PAT_4P }}" \
+          https://api.github.com/repos/$repo_owner/$repo_name/dispatches \
+          -d "{\"event_type\": \"$event_type\" }"
+    - name: Telegram notification error
+      if: failure()
+      run: |
+          text=$'⚠️⚠️⚠️ Update UI Kit'
+          json=$(jq -anc --arg chatId ${{ secrets.TELEGRAM_ID }} --arg messageId ${{ env.MESSAGE_ID }} --arg text "$text" '{"chat_id": $chatId, "message_id": $messageId, "text": $text}')
+          curl -X POST \
+               -H 'Content-Type: application/json' \
+               -d "$json" \
+               https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/editMessageText
