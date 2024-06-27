@@ -34,7 +34,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        ref: master
+        ref: parser
         ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
     - name: Set up Node.js
@@ -52,10 +52,20 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout master
+        git checkout -b parser
         git add .
         git commit --allow-empty -m "Automated build"
-        git push origin master --force
+        # git push origin master --force
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Automated PR - Update build
+        title: Automated PR - Update build
+        body: |
+          This PR was automatically generated to update the build output.
+        branch: parser
+        base: master
 
     - name: Telegram notif
       run: |
