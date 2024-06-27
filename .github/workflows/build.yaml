@@ -3,9 +3,9 @@ name: Build Static Files
 on:
   push:
     branches:
-      - master
+      - parser
   workflow_dispatch:
-    branches: [ "master" ]
+    branches: [ "parser" ]
   repository_dispatch:
     types: [trigger-workflow]
 
