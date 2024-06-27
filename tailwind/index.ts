@@ -6,7 +6,7 @@ import typographyUtilitiesPlugin from './plugins/typography.ts';
 import roundedUtilitiesPlugin from './plugins/rounded.ts';
 
 // Configs
-import borderRadiusConfig from './plugins/border-radius.json' assert { type: 'json' };
+import borderRadiusConfig from './plugins/configs/border-radius.json' assert { type: 'json' };
 import colorsConfig from './theme/colors.ts';
 
 export default ( customizer ) => {
