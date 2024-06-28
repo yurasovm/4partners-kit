@@ -8,6 +8,7 @@
 	"type": "module",
 	"files": [
 		"dist",
+		"src",
 		"dist/tv-configs"
 	],
 	"scripts": {
