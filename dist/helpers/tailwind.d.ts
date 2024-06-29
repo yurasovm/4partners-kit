@@ -1,1 +1,1 @@
-export declare function cn(...inputs: any[]): string;
+export declare function cn(...inputs: (string | undefined)[]): string;

@@ -3129,7 +3129,7 @@ const Fn = {
       label: ""
     },
     ghost: {
-      base: "bg-surface-transparent text-surface-on-highest border-surface-transparent hover:bg-surface-transparent hover:text-surface-on-high border-surface-transparent",
+      base: "bg-surface-transparent text-surface-on-high border-surface-transparent hover:bg-surface-transparent hover:text-surface-on-highest border-surface-transparent",
       iconWrapper: "",
       icon: "",
       label: ""
@@ -3161,7 +3161,7 @@ const Fn = {
   },
   size: {
     200: {
-      base: "p-1.5 rounded-200",
+      base: "p-2 rounded-200",
       iconWrapper: "size-4",
       iconWrapperStart: "",
       iconWrapperEnd: "",
@@ -3169,7 +3169,7 @@ const Fn = {
       label: "control-300 px-1"
     },
     300: {
-      base: "p-1.5 rounded-300",
+      base: "p-2 rounded-300",
       iconWrapper: "size-5",
       iconWrapperStart: "",
       iconWrapperEnd: "",
