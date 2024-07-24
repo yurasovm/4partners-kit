@@ -1,0 +1,53 @@
+{
+  "slots": {
+    "base": "group",
+    "button": "inline-flex items-center justify-center w-full h-full rounded-md border text-surface-on-highest bg-surface-transparent border-surface-transparent hover:bg-surface-surface hover:border-surface-dim active:bg-surface-dim active:border-surface-dim group-aria-selected:text-primary-on group-aria-selected:bg-primary-container-dim group-aria-selected:border-primary-core group-aria-selected:hover:bg-primary-container-core group-aria-selected:hover:border-primary-dim group-aria-selected:active:bg-primary-container-core group-aria-selected:active:border-primary-core",
+    "label": ""
+  },
+  "variants": {
+    "variant": {
+      "selected": {
+        "base": "",
+        "button": "",
+        "label": ""
+      },
+      "unselected": {
+        "base": "",
+        "button": "",
+        "label": ""
+      },
+      "unselected-transparent": {
+        "base": "",
+        "button": "",
+        "label": ""
+      }
+    },
+    "size": {
+      "200": {
+        "base": "",
+        "button": "",
+        "label": "p-2 gap-1 control-300"
+      },
+      "300": {
+        "base": "",
+        "button": "",
+        "label": "p-2 gap-1.5 control-400"
+      },
+      "400": {
+        "base": "",
+        "button": "",
+        "label": "p-2.5 gap-1.5 control-600"
+      },
+      "500": {
+        "base": "",
+        "button": "",
+        "label": "p-3 gap-1.5 control-800"
+      },
+      "600": {
+        "base": "",
+        "button": "",
+        "label": "p-3 gap-2.5 control-850"
+      }
+    }
+  }
+}
