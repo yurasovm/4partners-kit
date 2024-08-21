@@ -7,7 +7,11 @@ import { copyFileSync, mkdirSync, readdirSync } from 'fs';
 export default defineConfig({
 	plugins: [
 		react(),
-		dts({ include: ['src'] }),
+		dts({
+			include: ['src'],
+			insertTypesEntry: true,
+			rollupTypes: true
+		}),
 		{
 			name: 'copy-tv-configs',
 			generateBundle() {

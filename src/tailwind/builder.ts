@@ -11,14 +11,17 @@ export default class TailwindConfigBuilder {
 
 	setColors( colorsConfig ) {
 		this.config.theme.colors = colorsConfig;
+		return this;
 	}
 
 	setBorderRadius( borderRadiusConfig ) {
 		this.config.theme.borderRadius = borderRadiusConfig;
+		return this;
 	}
 
 	setExtend( extendConfig ) {
 		this.config.theme.extend = extendConfig;
+		return this;
 	}
 
 	setContent(contentConfig) {
@@ -38,6 +41,11 @@ export default class TailwindConfigBuilder {
 
 	addPlugin( plugin ) {
 		this.config.plugins.push( plugin );
+		return this;
+	}
+
+	mergeConfig( config ) {
+		this.config = { ...this.config, ...config };
 		return this;
 	}
 

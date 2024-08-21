@@ -19,5 +19,6 @@ export default ( customizer ) => {
 	builder.addPlugin( roundedUtilitiesPlugin );
 
 	customizer( builder );
+
 	return builder.build();
 }
