@@ -1,5 +1,5 @@
 import gr from "react";
-var Ve = { exports: {} }, be = {};
+var Fe = { exports: {} }, be = {};
 /**
  * @license React
  * react-jsx-runtime.production.min.js
@@ -14,11 +14,11 @@ function tt() {
   if (or) return be;
   or = 1;
   var r = gr, t = Symbol.for("react.element"), n = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, s = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function i(u, m, E) {
-    var f, R = {}, O = null, I = null;
-    E !== void 0 && (O = "" + E), m.key !== void 0 && (O = "" + m.key), m.ref !== void 0 && (I = m.ref);
-    for (f in m) o.call(m, f) && !s.hasOwnProperty(f) && (R[f] = m[f]);
-    if (u && u.defaultProps) for (f in m = u.defaultProps, m) R[f] === void 0 && (R[f] = m[f]);
+  function i(u, f, E) {
+    var m, R = {}, O = null, I = null;
+    E !== void 0 && (O = "" + E), f.key !== void 0 && (O = "" + f.key), f.ref !== void 0 && (I = f.ref);
+    for (m in f) o.call(f, m) && !s.hasOwnProperty(m) && (R[m] = f[m]);
+    if (u && u.defaultProps) for (m in f = u.defaultProps, f) R[m] === void 0 && (R[m] = f[m]);
     return { $$typeof: t, type: u, key: O, ref: I, props: R, _owner: d.current };
   }
   return be.Fragment = n, be.jsx = i, be.jsxs = i, be;
@@ -36,11 +36,11 @@ var ye = {};
 var ir;
 function nt() {
   return ir || (ir = 1, process.env.NODE_ENV !== "production" && function() {
-    var r = gr, t = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), s = Symbol.for("react.profiler"), i = Symbol.for("react.provider"), u = Symbol.for("react.context"), m = Symbol.for("react.forward_ref"), E = Symbol.for("react.suspense"), f = Symbol.for("react.suspense_list"), R = Symbol.for("react.memo"), O = Symbol.for("react.lazy"), I = Symbol.for("react.offscreen"), F = Symbol.iterator, T = "@@iterator";
+    var r = gr, t = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), s = Symbol.for("react.profiler"), i = Symbol.for("react.provider"), u = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), E = Symbol.for("react.suspense"), m = Symbol.for("react.suspense_list"), R = Symbol.for("react.memo"), O = Symbol.for("react.lazy"), I = Symbol.for("react.offscreen"), V = Symbol.iterator, T = "@@iterator";
     function P(e) {
       if (e === null || typeof e != "object")
         return null;
-      var a = F && e[F] || e[T];
+      var a = V && e[V] || e[T];
       return typeof a == "function" ? a : null;
     }
     var M = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -64,7 +64,7 @@ function nt() {
     var K = !1, se = !1, le = !1, ee = !1, re = !1, Y;
     Y = Symbol.for("react.module.reference");
     function te(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === o || e === s || re || e === d || e === E || e === f || ee || e === I || K || se || le || typeof e == "object" && e !== null && (e.$$typeof === O || e.$$typeof === R || e.$$typeof === i || e.$$typeof === u || e.$$typeof === m || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === o || e === s || re || e === d || e === E || e === m || ee || e === I || K || se || le || typeof e == "object" && e !== null && (e.$$typeof === O || e.$$typeof === R || e.$$typeof === i || e.$$typeof === u || e.$$typeof === f || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -98,7 +98,7 @@ function nt() {
           return "StrictMode";
         case E:
           return "Suspense";
-        case f:
+        case m:
           return "SuspenseList";
       }
       if (typeof e == "object")
@@ -109,7 +109,7 @@ function nt() {
           case i:
             var l = e;
             return c(l._context) + ".Provider";
-          case m:
+          case f:
             return ne(e, e.render, "ForwardRef");
           case R:
             var p = e.displayName || null;
@@ -125,14 +125,14 @@ function nt() {
         }
       return null;
     }
-    var g = Object.assign, w = 0, y, z, k, _, H, G, V;
+    var g = Object.assign, w = 0, y, z, k, _, H, G, F;
     function Ee() {
     }
     Ee.__reactDisabledLog = !0;
-    function fe() {
+    function me() {
       {
         if (w === 0) {
-          y = console.log, z = console.info, k = console.warn, _ = console.error, H = console.group, G = console.groupCollapsed, V = console.groupEnd;
+          y = console.log, z = console.info, k = console.warn, _ = console.error, H = console.group, G = console.groupCollapsed, F = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
@@ -180,7 +180,7 @@ function nt() {
               value: G
             }),
             groupEnd: g({}, e, {
-              value: V
+              value: F
             })
           });
         }
@@ -219,7 +219,7 @@ function nt() {
       var C = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
       var j;
-      j = ce.current, ce.current = null, fe();
+      j = ce.current, ce.current = null, me();
       try {
         if (a) {
           var x = function() {
@@ -294,12 +294,12 @@ function nt() {
       switch (e) {
         case E:
           return Re("Suspense");
-        case f:
+        case m:
           return Re("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case m:
+          case f:
             return Ar(e.render);
           case R:
             return ke(e.type, a, l);
@@ -371,7 +371,7 @@ function nt() {
       __source: !0
     }, Ke, Xe, Oe;
     Oe = {};
-    function Vr(e) {
+    function Fr(e) {
       if (ge.call(e, "ref")) {
         var a = Object.getOwnPropertyDescriptor(e, "ref").get;
         if (a && a.isReactWarning)
@@ -379,7 +379,7 @@ function nt() {
       }
       return e.ref !== void 0;
     }
-    function Fr(e) {
+    function Vr(e) {
       if (ge.call(e, "key")) {
         var a = Object.getOwnPropertyDescriptor(e, "key").get;
         if (a && a.isReactWarning)
@@ -447,7 +447,7 @@ function nt() {
     function Br(e, a, l, p, C) {
       {
         var j, x = {}, S = null, N = null;
-        l !== void 0 && (qe(l), S = "" + l), Fr(a) && (qe(a.key), S = "" + a.key), Vr(a) && (N = a.ref, Nr(a, C));
+        l !== void 0 && (qe(l), S = "" + l), Vr(a) && (qe(a.key), S = "" + a.key), Fr(a) && (N = a.ref, Nr(a, C));
         for (j in a)
           ge.call(a, j) && !Mr.hasOwnProperty(j) && (x[j] = a[j]);
         if (e && e.defaultProps) {
@@ -543,7 +543,7 @@ Check the top-level render call using <` + l + ">.");
         var l;
         if (typeof a == "function")
           l = a.propTypes;
-        else if (typeof a == "object" && (a.$$typeof === m || // Note: Memo only checks outer props here.
+        else if (typeof a == "object" && (a.$$typeof === f || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
         a.$$typeof === R))
           l = a.propTypes;
@@ -627,8 +627,8 @@ React keys must be passed directly to JSX without using spread:
     ye.Fragment = o, ye.jsx = Zr, ye.jsxs = Qr;
   }()), ye;
 }
-process.env.NODE_ENV === "production" ? Ve.exports = tt() : Ve.exports = nt();
-var Q = Ve.exports, sr = (r) => typeof r == "boolean" ? `${r}` : r === 0 ? "0" : r, D = (r) => !r || typeof r != "object" || Object.keys(r).length === 0, at = (r, t) => JSON.stringify(r) === JSON.stringify(t);
+process.env.NODE_ENV === "production" ? Fe.exports = tt() : Fe.exports = nt();
+var Q = Fe.exports, sr = (r) => typeof r == "boolean" ? `${r}` : r === 0 ? "0" : r, D = (r) => !r || typeof r != "object" || Object.keys(r).length === 0, at = (r, t) => JSON.stringify(r) === JSON.stringify(t);
 function vr(r, t) {
   r.forEach(function(n) {
     Array.isArray(n) ? vr(n, t) : t.push(n);
@@ -658,8 +658,8 @@ function ot(r) {
     return u[0] === "" && u.length !== 1 && u.shift(), Sr(u, t) || it(i);
   }
   function s(i, u) {
-    const m = n[i] || [];
-    return u && o[i] ? [...m, ...o[i]] : m;
+    const f = n[i] || [];
+    return u && o[i] ? [...f, ...o[i]] : f;
   }
   return {
     getClassGroupId: d,
@@ -697,10 +697,10 @@ function st(r) {
     validators: []
   };
   return ct(Object.entries(r.classGroups), n).forEach(([s, i]) => {
-    Fe(i, o, s, t);
+    Ve(i, o, s, t);
   }), o;
 }
-function Fe(r, t, n, o) {
+function Ve(r, t, n, o) {
   r.forEach((d) => {
     if (typeof d == "string") {
       const s = d === "" ? t : dr(t, d);
@@ -709,7 +709,7 @@ function Fe(r, t, n, o) {
     }
     if (typeof d == "function") {
       if (lt(d)) {
-        Fe(d(o), t, n, o);
+        Ve(d(o), t, n, o);
         return;
       }
       t.validators.push({
@@ -719,7 +719,7 @@ function Fe(r, t, n, o) {
       return;
     }
     Object.entries(d).forEach(([s, i]) => {
-      Fe(i, dr(t, s), n, o);
+      Ve(i, dr(t, s), n, o);
     });
   });
 }
@@ -771,31 +771,31 @@ function ut(r) {
   const t = r.separator, n = t.length === 1, o = t[0], d = t.length;
   return function(i) {
     const u = [];
-    let m = 0, E = 0, f;
+    let f = 0, E = 0, m;
     for (let T = 0; T < i.length; T++) {
       let P = i[T];
-      if (m === 0) {
+      if (f === 0) {
         if (P === o && (n || i.slice(T, T + d) === t)) {
           u.push(i.slice(E, T)), E = T + d;
           continue;
         }
         if (P === "/") {
-          f = T;
+          m = T;
           continue;
         }
       }
-      P === "[" ? m++ : P === "]" && m--;
+      P === "[" ? f++ : P === "]" && f--;
     }
-    const R = u.length === 0 ? i : i.substring(E), O = R.startsWith(xr), I = O ? R.substring(1) : R, F = f && f > E ? f - E : void 0;
+    const R = u.length === 0 ? i : i.substring(E), O = R.startsWith(xr), I = O ? R.substring(1) : R, V = m && m > E ? m - E : void 0;
     return {
       modifiers: u,
       hasImportantModifier: O,
       baseClassName: I,
-      maybePostfixModifierPosition: F
+      maybePostfixModifierPosition: V
     };
   };
 }
-function mt(r) {
+function ft(r) {
   if (r.length <= 1)
     return r;
   const t = [];
@@ -804,7 +804,7 @@ function mt(r) {
     o[0] === "[" ? (t.push(...n.sort(), o), n = []) : n.push(o);
   }), t.push(...n.sort()), t;
 }
-function ft(r) {
+function mt(r) {
   return {
     cache: dt(r.cacheSize),
     splitModifiers: ut(r),
@@ -821,13 +821,13 @@ function ht(r, t) {
   return r.trim().split(pt).map((i) => {
     const {
       modifiers: u,
-      hasImportantModifier: m,
+      hasImportantModifier: f,
       baseClassName: E,
-      maybePostfixModifierPosition: f
+      maybePostfixModifierPosition: m
     } = n(i);
-    let R = o(f ? E.substring(0, f) : E), O = !!f;
+    let R = o(m ? E.substring(0, m) : E), O = !!m;
     if (!R) {
-      if (!f)
+      if (!m)
         return {
           isTailwindClass: !1,
           originalClassName: i
@@ -839,10 +839,10 @@ function ht(r, t) {
         };
       O = !1;
     }
-    const I = mt(u).join(":");
+    const I = ft(u).join(":");
     return {
       isTailwindClass: !0,
-      modifierId: m ? I + xr : I,
+      modifierId: f ? I + xr : I,
       classGroupId: R,
       originalClassName: i,
       hasPostfixModifier: O
@@ -852,10 +852,10 @@ function ht(r, t) {
       return !0;
     const {
       modifierId: u,
-      classGroupId: m,
+      classGroupId: f,
       hasPostfixModifier: E
-    } = i, f = u + m;
-    return s.has(f) ? !1 : (s.add(f), d(m, E).forEach((R) => s.add(u + R)), !0);
+    } = i, m = u + f;
+    return s.has(m) ? !1 : (s.add(m), d(f, E).forEach((R) => s.add(u + R)), !0);
   }).reverse().map((i) => i.originalClassName).join(" ");
 }
 function gt() {
@@ -874,16 +874,16 @@ function zr(r) {
 }
 function Ne(r, ...t) {
   let n, o, d, s = i;
-  function i(m) {
-    const E = t.reduce((f, R) => R(f), r());
-    return n = ft(E), o = n.cache.get, d = n.cache.set, s = u, u(m);
+  function i(f) {
+    const E = t.reduce((m, R) => R(m), r());
+    return n = mt(E), o = n.cache.get, d = n.cache.set, s = u, u(f);
   }
-  function u(m) {
-    const E = o(m);
+  function u(f) {
+    const E = o(f);
     if (E)
       return E;
-    const f = ht(m, n);
-    return d(m, f), f;
+    const m = ht(f, n);
+    return d(f, m), m;
   }
   return function() {
     return s(gt.apply(null, arguments));
@@ -898,13 +898,13 @@ function J(r) {
   return oe(r) || bt.has(r) || vt.test(r);
 }
 function X(r) {
-  return me(r, "length", Pt);
+  return fe(r, "length", Pt);
 }
 function oe(r) {
   return !!r && !Number.isNaN(Number(r));
 }
 function Te(r) {
-  return me(r, "number", oe);
+  return fe(r, "number", oe);
 }
 function we(r) {
   return !!r && Number.isInteger(Number(r));
@@ -920,22 +920,22 @@ function Z(r) {
 }
 const Rt = /* @__PURE__ */ new Set(["length", "size", "percentage"]);
 function Ct(r) {
-  return me(r, Rt, Rr);
+  return fe(r, Rt, Rr);
 }
 function kt(r) {
-  return me(r, "position", Rr);
+  return fe(r, "position", Rr);
 }
 const _t = /* @__PURE__ */ new Set(["image", "url"]);
 function Tt(r) {
-  return me(r, _t, Ot);
+  return fe(r, _t, Ot);
 }
 function jt(r) {
-  return me(r, "", At);
+  return fe(r, "", At);
 }
 function Se() {
   return !0;
 }
-function me(r, t, n) {
+function fe(r, t, n) {
   const o = Er.exec(r);
   return o ? o[1] ? typeof t == "string" ? o[1] === t : t.has(o[1]) : n(o[2]) : !1;
 }
@@ -952,7 +952,7 @@ function Ot(r) {
   return zt.test(r);
 }
 function Ge() {
-  const r = A("colors"), t = A("spacing"), n = A("blur"), o = A("brightness"), d = A("borderColor"), s = A("borderRadius"), i = A("borderSpacing"), u = A("borderWidth"), m = A("contrast"), E = A("grayscale"), f = A("hueRotate"), R = A("invert"), O = A("gap"), I = A("gradientColorStops"), F = A("gradientColorStopPositions"), T = A("inset"), P = A("margin"), M = A("opacity"), v = A("padding"), ie = A("saturate"), K = A("scale"), se = A("sepia"), le = A("skew"), ee = A("space"), re = A("translate"), Y = () => ["auto", "contain", "none"], te = () => ["auto", "hidden", "clip", "visible", "scroll"], ne = () => ["auto", b, t], c = () => [b, t], h = () => ["", J, X], g = () => ["auto", oe, b], w = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], y = () => ["solid", "dashed", "dotted", "double", "none"], z = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"], k = () => ["start", "end", "center", "between", "around", "evenly", "stretch"], _ = () => ["", "0", b], H = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], G = () => [oe, Te], V = () => [oe, b];
+  const r = A("colors"), t = A("spacing"), n = A("blur"), o = A("brightness"), d = A("borderColor"), s = A("borderRadius"), i = A("borderSpacing"), u = A("borderWidth"), f = A("contrast"), E = A("grayscale"), m = A("hueRotate"), R = A("invert"), O = A("gap"), I = A("gradientColorStops"), V = A("gradientColorStopPositions"), T = A("inset"), P = A("margin"), M = A("opacity"), v = A("padding"), ie = A("saturate"), K = A("scale"), se = A("sepia"), le = A("skew"), ee = A("space"), re = A("translate"), Y = () => ["auto", "contain", "none"], te = () => ["auto", "hidden", "clip", "visible", "scroll"], ne = () => ["auto", b, t], c = () => [b, t], h = () => ["", J, X], g = () => ["auto", oe, b], w = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], y = () => ["solid", "dashed", "dotted", "double", "none"], z = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"], k = () => ["start", "end", "center", "between", "around", "evenly", "stretch"], _ = () => ["", "0", b], H = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], G = () => [oe, Te], F = () => [oe, b];
   return {
     cacheSize: 500,
     separator: ":",
@@ -967,7 +967,7 @@ function Ge() {
       borderWidth: h(),
       contrast: G(),
       grayscale: _(),
-      hueRotate: V(),
+      hueRotate: F(),
       invert: _(),
       gap: c(),
       gradientColorStops: [r],
@@ -979,7 +979,7 @@ function Ge() {
       saturate: G(),
       scale: G(),
       sepia: _(),
-      skew: V(),
+      skew: F(),
       space: c(),
       translate: c()
     },
@@ -1923,21 +1923,21 @@ function Ge() {
        * @see https://tailwindcss.com/docs/gradient-color-stops
        */
       "gradient-from-pos": [{
-        from: [F]
+        from: [V]
       }],
       /**
        * Gradient Color Stops Via Position
        * @see https://tailwindcss.com/docs/gradient-color-stops
        */
       "gradient-via-pos": [{
-        via: [F]
+        via: [V]
       }],
       /**
        * Gradient Color Stops To Position
        * @see https://tailwindcss.com/docs/gradient-color-stops
        */
       "gradient-to-pos": [{
-        to: [F]
+        to: [V]
       }],
       /**
        * Gradient Color Stops From
@@ -2369,7 +2369,7 @@ function Ge() {
        * @see https://tailwindcss.com/docs/contrast
        */
       contrast: [{
-        contrast: [m]
+        contrast: [f]
       }],
       /**
        * Drop Shadow
@@ -2390,7 +2390,7 @@ function Ge() {
        * @see https://tailwindcss.com/docs/hue-rotate
        */
       "hue-rotate": [{
-        "hue-rotate": [f]
+        "hue-rotate": [m]
       }],
       /**
        * Invert
@@ -2440,7 +2440,7 @@ function Ge() {
        * @see https://tailwindcss.com/docs/backdrop-contrast
        */
       "backdrop-contrast": [{
-        "backdrop-contrast": [m]
+        "backdrop-contrast": [f]
       }],
       /**
        * Backdrop Grayscale
@@ -2454,7 +2454,7 @@ function Ge() {
        * @see https://tailwindcss.com/docs/backdrop-hue-rotate
        */
       "backdrop-hue-rotate": [{
-        "backdrop-hue-rotate": [f]
+        "backdrop-hue-rotate": [m]
       }],
       /**
        * Backdrop Invert
@@ -2540,7 +2540,7 @@ function Ge() {
        * @see https://tailwindcss.com/docs/transition-duration
        */
       duration: [{
-        duration: V()
+        duration: F()
       }],
       /**
        * Transition Timing Function
@@ -2554,7 +2554,7 @@ function Ge() {
        * @see https://tailwindcss.com/docs/transition-delay
        */
       delay: [{
-        delay: V()
+        delay: F()
       }],
       /**
        * Animation
@@ -3004,10 +3004,10 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
   for (let n in t) r.hasOwnProperty(n) ? r[n] = ze(r[n], t[n]) : r[n] = t[n];
   return r;
 }, _r = (r, t) => {
-  let { extend: n = null, slots: o = {}, variants: d = {}, compoundVariants: s = [], compoundSlots: i = [], defaultVariants: u = {} } = r, m = { ...Mt, ...t }, E = n != null && n.base ? ze(n.base, r == null ? void 0 : r.base) : r == null ? void 0 : r.base, f = n != null && n.variants && !D(n.variants) ? wr(d, n.variants) : d, R = n != null && n.defaultVariants && !D(n.defaultVariants) ? { ...n.defaultVariants, ...u } : u;
-  !D(m.twMergeConfig) && !at(m.twMergeConfig, q) && (Le = !0, q = m.twMergeConfig);
-  let O = D(n == null ? void 0 : n.slots), I = D(o) ? {} : { base: ze(r == null ? void 0 : r.base, O && (n == null ? void 0 : n.base)), ...o }, F = O ? I : ur({ ...n == null ? void 0 : n.slots }, D(I) ? { base: r == null ? void 0 : r.base } : I), T = D(n == null ? void 0 : n.compoundVariants) ? s : yr(n == null ? void 0 : n.compoundVariants, s), P = (v) => {
-    if (D(f) && D(o) && O) return xe(E, v == null ? void 0 : v.class, v == null ? void 0 : v.className)(m);
+  let { extend: n = null, slots: o = {}, variants: d = {}, compoundVariants: s = [], compoundSlots: i = [], defaultVariants: u = {} } = r, f = { ...Mt, ...t }, E = n != null && n.base ? ze(n.base, r == null ? void 0 : r.base) : r == null ? void 0 : r.base, m = n != null && n.variants && !D(n.variants) ? wr(d, n.variants) : d, R = n != null && n.defaultVariants && !D(n.defaultVariants) ? { ...n.defaultVariants, ...u } : u;
+  !D(f.twMergeConfig) && !at(f.twMergeConfig, q) && (Le = !0, q = f.twMergeConfig);
+  let O = D(n == null ? void 0 : n.slots), I = D(o) ? {} : { base: ze(r == null ? void 0 : r.base, O && (n == null ? void 0 : n.base)), ...o }, V = O ? I : ur({ ...n == null ? void 0 : n.slots }, D(I) ? { base: r == null ? void 0 : r.base } : I), T = D(n == null ? void 0 : n.compoundVariants) ? s : yr(n == null ? void 0 : n.compoundVariants, s), P = (v) => {
+    if (D(m) && D(o) && O) return xe(E, v == null ? void 0 : v.class, v == null ? void 0 : v.className)(f);
     if (T && !Array.isArray(T)) throw new TypeError(`The "compoundVariants" prop must be an array. Received: ${typeof T}`);
     if (i && !Array.isArray(i)) throw new TypeError(`The "compoundSlots" prop must be an array. Received: ${typeof i}`);
     let ie = (c, h, g = [], w) => {
@@ -3024,28 +3024,28 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
         }
       }
       return y;
-    }, K = (c, h = f, g = null, w = null) => {
+    }, K = (c, h = m, g = null, w = null) => {
       var y;
       let z = h[c];
       if (!z || D(z)) return null;
       let k = (y = w == null ? void 0 : w[c]) != null ? y : v == null ? void 0 : v[c];
       if (k === null) return null;
-      let _ = sr(k), H = Array.isArray(m.responsiveVariants) && m.responsiveVariants.length > 0 || m.responsiveVariants === !0, G = R == null ? void 0 : R[c], V = [];
+      let _ = sr(k), H = Array.isArray(f.responsiveVariants) && f.responsiveVariants.length > 0 || f.responsiveVariants === !0, G = R == null ? void 0 : R[c], F = [];
       if (typeof _ == "object" && H) for (let [pe, ce] of Object.entries(_)) {
         let he = z[ce];
         if (pe === "initial") {
           G = ce;
           continue;
         }
-        Array.isArray(m.responsiveVariants) && !m.responsiveVariants.includes(pe) || (V = ie(pe, he, V, g));
+        Array.isArray(f.responsiveVariants) && !f.responsiveVariants.includes(pe) || (F = ie(pe, he, F, g));
       }
-      let Ee = _ != null && typeof _ != "object" ? _ : sr(G), fe = z[Ee || "false"];
-      return typeof V == "object" && typeof g == "string" && V[g] ? ur(V, fe) : V.length > 0 ? (V.push(fe), V) : fe;
-    }, se = () => f ? Object.keys(f).map((c) => K(c, f)) : null, le = (c, h) => {
-      if (!f || typeof f != "object") return null;
+      let Ee = _ != null && typeof _ != "object" ? _ : sr(G), me = z[Ee || "false"];
+      return typeof F == "object" && typeof g == "string" && F[g] ? ur(F, me) : F.length > 0 ? (F.push(me), F) : me;
+    }, se = () => m ? Object.keys(m).map((c) => K(c, m)) : null, le = (c, h) => {
+      if (!m || typeof m != "object") return null;
       let g = new Array();
-      for (let w in f) {
-        let y = K(w, f, c, h), z = c === "base" && typeof y == "string" ? y : y && y[c];
+      for (let w in m) {
+        let y = K(w, m, c, h), z = c === "base" && typeof y == "string" ? y : y && y[c];
         z && (g[g.length] = z);
       }
       return g;
@@ -3078,7 +3078,7 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
       let h = Y(T, c);
       if (!Array.isArray(h)) return h;
       let g = {};
-      for (let w of h) if (typeof w == "string" && (g.base = xe(g.base, w)(m)), typeof w == "object") for (let [y, z] of Object.entries(w)) g[y] = xe(g[y], z)(m);
+      for (let w of h) if (typeof w == "string" && (g.base = xe(g.base, w)(f)), typeof w == "object") for (let [y, z] of Object.entries(w)) g[y] = xe(g[y], z)(f);
       return g;
     }, ne = (c) => {
       if (i.length < 1) return null;
@@ -3101,26 +3101,26 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
     };
     if (!D(o) || !O) {
       let c = {};
-      if (typeof F == "object" && !D(F)) for (let h of Object.keys(F)) c[h] = (g) => {
+      if (typeof V == "object" && !D(V)) for (let h of Object.keys(V)) c[h] = (g) => {
         var w, y;
-        return xe(F[h], le(h, g), ((w = te(g)) != null ? w : [])[h], ((y = ne(g)) != null ? y : [])[h], g == null ? void 0 : g.class, g == null ? void 0 : g.className)(m);
+        return xe(V[h], le(h, g), ((w = te(g)) != null ? w : [])[h], ((y = ne(g)) != null ? y : [])[h], g == null ? void 0 : g.class, g == null ? void 0 : g.className)(f);
       };
       return c;
     }
-    return xe(E, se(), Y(T), v == null ? void 0 : v.class, v == null ? void 0 : v.className)(m);
+    return xe(E, se(), Y(T), v == null ? void 0 : v.class, v == null ? void 0 : v.className)(f);
   }, M = () => {
-    if (!(!f || typeof f != "object")) return Object.keys(f);
+    if (!(!m || typeof m != "object")) return Object.keys(m);
   };
-  return P.variantKeys = M(), P.extend = n, P.base = E, P.slots = F, P.variants = f, P.defaultVariants = R, P.compoundSlots = i, P.compoundVariants = T, P;
+  return P.variantKeys = M(), P.extend = n, P.base = E, P.slots = V, P.variants = m, P.defaultVariants = R, P.compoundSlots = i, P.compoundVariants = T, P;
 };
-const Vt = {
+const Ft = {
   base: "inline-flex items-center border",
   iconWrapper: "shrink-0",
   iconWrapperStart: "",
   iconWrapperEnd: "",
   icon: "",
   label: ""
-}, Ft = {
+}, Vt = {
   variant: {
     primary: {
       base: "bg-primary-core text-primary-on border-primary-core hover:bg-primary-dim hover:text-primary-on border-primary-dim",
@@ -3227,9 +3227,9 @@ const Vt = {
   }
 };
 var Tr = {
-  slots: Vt,
-  variants: Ft
-}, mr = ({ name: r, size: t, className: n = "" }) => /* @__PURE__ */ Q.jsx(
+  slots: Ft,
+  variants: Vt
+}, fr = ({ name: r, size: t, className: n = "" }) => /* @__PURE__ */ Q.jsx(
   "svg",
   {
     className: n,
@@ -3259,12 +3259,12 @@ function U(...r) {
 const Gt = _r(Tr), {
   base: Lt,
   label: Dt,
-  iconWrapper: fr,
+  iconWrapper: mr,
   iconWrapperStart: Bt,
   iconWrapperEnd: Ut,
   icon: pr
 } = Gt();
-var mn = ({
+var fn = ({
   label: r,
   variant: t = "primary",
   size: n = "500",
@@ -3282,9 +3282,9 @@ var mn = ({
     {
       className: U(Lt(i), s),
       children: [
-        o && /* @__PURE__ */ Q.jsx("span", { className: U(fr(i), Bt(i)), children: /* @__PURE__ */ Q.jsx(mr, { className: U(pr(i)), name: o, size: 24 }) }),
+        o && /* @__PURE__ */ Q.jsx("span", { className: U(mr(i), Bt(i)), children: /* @__PURE__ */ Q.jsx(fr, { className: U(pr(i)), name: o, size: 24 }) }),
         r && /* @__PURE__ */ Q.jsx("span", { className: U(Dt(i)), children: r }),
-        d && /* @__PURE__ */ Q.jsx("span", { className: U(fr(i), Ut(i)), children: /* @__PURE__ */ Q.jsx(mr, { className: U(pr(i)), name: d, size: 24 }) })
+        d && /* @__PURE__ */ Q.jsx("span", { className: U(mr(i), Ut(i)), children: /* @__PURE__ */ Q.jsx(fr, { className: U(pr(i)), name: d, size: 24 }) })
       ]
     }
   );
@@ -3304,7 +3304,7 @@ const Yt = _r(Tr), {
   iconEnd: !1,
   class: ""
 };
-function fn(r) {
+function mn(r) {
   r = { ...Qt, ...r };
   const t = {
     variant: r.variant,
@@ -3330,6 +3330,9 @@ function fn(r) {
 	`;
 }
 class en {
+  /**
+   * Создает новый экземпляр TailwindConfigBuilder с базовой конфигурацией.
+   */
   constructor() {
     this.config = {
       content: [],
@@ -3338,35 +3341,141 @@ class en {
       plugins: []
     };
   }
+  /**
+   * Устанавливает конфигурацию цветов.
+   * @param colorsConfig Объект с определениями цветов.
+   * @returns this для цепочки вызовов.
+   */
   setColors(t) {
     return this.config.theme.colors = t, this;
   }
+  /**
+   * Устанавливает конфигурацию скругления границ.
+   * @param borderRadiusConfig Объект с определениями радиусов границ.
+   * @returns this для цепочки вызовов.
+   */
   setBorderRadius(t) {
     return this.config.theme.borderRadius = t, this;
   }
+  /**
+   * Устанавливает расширения для темы.
+   * @param extendConfig Объект с дополнительными настройками темы.
+   * @returns this для цепочки вызовов.
+   */
   setExtend(t) {
     return this.config.theme.extend = t, this;
   }
+  /**
+   * Устанавливает пути к файлам контента для Tailwind.
+   * @param contentConfig Массив строк с путями к файлам.
+   * @returns this для цепочки вызовов.
+   */
   setContent(t) {
     return this.config.content = t, this;
   }
+  /**
+   * Устанавливает полную конфигурацию темы.
+   * @param themeConfig Объект с настройками темы.
+   * @returns this для цепочки вызовов.
+   */
   setTheme(t) {
     return this.config.theme = t, this;
   }
+  /**
+   * Устанавливает конфигурацию вариантов.
+   * @param variantsConfig Объект с настройками вариантов.
+   * @returns this для цепочки вызовов.
+   */
   setVariants(t) {
     return this.config.variants = t, this;
   }
+  /**
+   * Добавляет плагин в конфигурацию.
+   * @param plugin Функция плагина.
+   * @returns this для цепочки вызовов.
+   */
   addPlugin(t) {
     return this.config.plugins.push(t), this;
   }
+  /**
+   * Возвращает текущую конфигурацию.
+   * @returns Объект конфигурации Tailwind.
+   */
   getConfig() {
     return this.config;
   }
+  /**
+   * Устанавливает полную конфигурацию Tailwind.
+   * @param config Объект конфигурации Tailwind.
+   * @returns this для цепочки вызовов.
+   */
   setConfig(t) {
     return this.config = t, this;
   }
+  /**
+   * Создает и возвращает окончательную конфигурацию Tailwind.
+   * @returns Объект конфигурации Tailwind.
+   */
   build() {
     return { ...this.config };
+  }
+  /**
+   * Устанавливает конфигурацию шрифтов.
+   * @param fontFamilyConfig Объект с определениями семейств шрифтов.
+   * @returns this для цепочки вызовов.
+   */
+  setFontFamily(t) {
+    return this.config.theme.fontFamily = t, this;
+  }
+  /**
+   * Устанавливает конфигурацию экранов (брейкпоинтов).
+   * @param screensConfig Объект с определениями размеров экранов.
+   * @returns this для цепочки вызовов.
+   */
+  setScreens(t) {
+    return this.config.theme.screens = t, this;
+  }
+  /**
+   * Устанавливает конфигурацию отступов.
+   * @param spacingConfig Объект с определениями отступов.
+   * @returns this для цепочки вызовов.
+   */
+  setSpacing(t) {
+    return this.config.theme.spacing = t, this;
+  }
+  /**
+   * Устанавливает префикс для всех утилит Tailwind.
+   * @param prefix Строка префикса.
+   * @returns this для цепочки вызовов.
+   */
+  setPrefix(t) {
+    return this.config.prefix = t, this;
+  }
+  /**
+   * Устанавливает важность для всех утилит Tailwind.
+   * @param important Булево значение или строка селектора.
+   * @returns this для цепочки вызовов.
+   */
+  setImportant(t) {
+    return this.config.important = t, this;
+  }
+  /**
+   * Устанавливает режим темной темы.
+   * @param darkMode Режим темной темы: 'media', 'class' или false.
+   * @returns this для цепочки вызовов.
+   */
+  setDarkMode(t) {
+    return this.config.darkMode = t, this;
+  }
+  /**
+   * Добавляет пользовательские утилиты в конфигурацию.
+   * @param utilities Объект с определениями пользовательских утилит.
+   * @returns this для цепочки вызовов.
+   */
+  addUtilities(t) {
+    return this.config.plugins || (this.config.plugins = []), this.config.plugins.push(({ addUtilities: n }) => {
+      n(t);
+    }), this;
   }
 }
 var rn = {
@@ -3957,8 +4066,8 @@ var dn = {
   return t.setColors(dn), t.setBorderRadius(ln), t.addPlugin(tn), t.addPlugin(an), r(t), t.build();
 };
 export {
-  mn as Button,
-  mr as Icon,
+  fn as Button,
+  fr as Icon,
   pn as createTailwindConfig,
-  fn as makeButton
+  mn as makeButton
 };
