@@ -3359,8 +3359,11 @@ class en {
   addPlugin(t) {
     return this.config.plugins.push(t), this;
   }
-  mergeConfig(t) {
-    return this.config = { ...this.config, ...t }, this;
+  getConfig() {
+    return this.config;
+  }
+  setConfig(t) {
+    return this.config = t, this;
   }
   build() {
     return { ...this.config };

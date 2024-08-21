@@ -44,8 +44,12 @@ export default class TailwindConfigBuilder {
 		return this;
 	}
 
-	mergeConfig( config ) {
-		this.config = { ...this.config, ...config };
+	getConfig() {
+		return this.config;
+	}
+
+	setConfig( config ) {
+		this.config = config;
 		return this;
 	}
 
