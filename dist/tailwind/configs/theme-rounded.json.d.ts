@@ -1,0 +1,40 @@
+declare const _default: {
+  ":root": {
+    "--rounded-200": "0rem",
+    "--rounded-300": "0rem",
+    "--rounded-400": "0rem",
+    "--rounded-500": "0rem",
+    "--rounded-600": "0rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  },
+  ".theme-rounded-none": {
+    "--rounded-200": "0rem",
+    "--rounded-300": "0rem",
+    "--rounded-400": "0rem",
+    "--rounded-500": "0rem",
+    "--rounded-600": "0rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  },
+  ".theme-rounded": {
+    "--rounded-200": "1.625rem",
+    "--rounded-300": "1.625rem",
+    "--rounded-400": "1.625rem",
+    "--rounded-500": "1.625rem",
+    "--rounded-600": "1.625rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  },
+  ".theme-rounded-smooth": {
+    "--rounded-200": "0.25rem",
+    "--rounded-300": "0.375rem",
+    "--rounded-400": "0.5rem",
+    "--rounded-500": "0.625rem",
+    "--rounded-600": "0.75rem",
+    "--rounded-full": "37.5rem",
+    "--rounded-none": "0rem"
+  }
+};
+
+export default _default;

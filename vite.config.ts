@@ -7,7 +7,7 @@ import { copyFileSync, mkdirSync, readdirSync } from 'fs';
 export default defineConfig({
 	plugins: [
 		react(),
-		dts(),
+		dts({ include: ['src'] }),
 		{
 			name: 'copy-tv-configs',
 			generateBundle() {
@@ -27,7 +27,8 @@ export default defineConfig({
 		lib: {
 			entry: resolve(__dirname, 'src/index.ts'),
 			name: '4PartnersKit',
-			fileName: (format) => `index.${format}.js`,
+			formats: ['es', 'cjs'],
+			fileName: (format) => `index.${format === 'es' ? 'mjs' : 'cjs'}`,
 		},
 		rollupOptions: {
 			external: ['react', 'react-dom'],
@@ -36,6 +37,7 @@ export default defineConfig({
 					react: 'React',
 					'react-dom': 'ReactDOM',
 				},
+				generatedCode: 'es5'
 			},
 		},
 	},

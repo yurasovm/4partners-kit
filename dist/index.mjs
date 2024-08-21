@@ -3225,7 +3225,8 @@ const Fn = {
       iconWrapperEnd: "me-2.5"
     }
   }
-}, Tr = {
+};
+var Tr = {
   slots: Fn,
   variants: Nn
 }, mr = ({ name: r, size: n, className: t = "" }) => /* @__PURE__ */ Q.jsx(
@@ -3262,7 +3263,8 @@ const Ln = _r(Tr), {
   iconWrapperStart: Un,
   iconWrapperEnd: Yn,
   icon: pr
-} = Ln(), mt = ({
+} = Ln();
+var mt = ({
   label: r,
   variant: n = "primary",
   size: t = "500",
@@ -3286,7 +3288,8 @@ const Ln = _r(Tr), {
       ]
     }
   );
-}, Jn = _r(Tr), {
+};
+const Jn = _r(Tr), {
   base: qn,
   label: Kn,
   iconWrapper: hr,
@@ -3360,7 +3363,7 @@ class rt {
     return { ...this.config };
   }
 }
-const nt = {
+var nt = {
   ".title-1": {
     fontSize: "2.125rem",
     lineHeight: "2.5rem",
@@ -3814,7 +3817,9 @@ const nt = {
   }
 }, ot = ({ addComponents: r }) => {
   r(at);
-}, it = "var(--rounded-full)", st = "var(--rounded-none)", lt = {
+};
+const it = "var(--rounded-full)", st = "var(--rounded-none)";
+var lt = {
   200: "var(--rounded-200)",
   300: "var(--rounded-300)",
   400: "var(--rounded-400)",
@@ -3822,7 +3827,9 @@ const nt = {
   600: "var(--rounded-600)",
   full: it,
   none: st
-}, ct = "rgb(255 255 255 / <alpha-value>)", dt = {
+};
+const ct = "rgb(255 255 255 / <alpha-value>)";
+var dt = {
   "primary-core": "rgb(var(--primary-core ) / <alpha-value>)",
   "primary-chroma": "rgb(var(--primary-chroma) / <alpha-value>)",
   "primary-dim": "rgb(var(--primary-dim) / <alpha-value>)",
