@@ -15,11 +15,11 @@ function tt() {
   or = 1;
   var r = gr, t = Symbol.for("react.element"), n = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, s = { key: !0, ref: !0, __self: !0, __source: !0 };
   function i(u, f, E) {
-    var m, R = {}, O = null, I = null;
-    E !== void 0 && (O = "" + E), f.key !== void 0 && (O = "" + f.key), f.ref !== void 0 && (I = f.ref);
+    var m, R = {}, H = null, I = null;
+    E !== void 0 && (H = "" + E), f.key !== void 0 && (H = "" + f.key), f.ref !== void 0 && (I = f.ref);
     for (m in f) o.call(f, m) && !s.hasOwnProperty(m) && (R[m] = f[m]);
     if (u && u.defaultProps) for (m in f = u.defaultProps, f) R[m] === void 0 && (R[m] = f[m]);
-    return { $$typeof: t, type: u, key: O, ref: I, props: R, _owner: d.current };
+    return { $$typeof: t, type: u, key: H, ref: I, props: R, _owner: d.current };
   }
   return be.Fragment = n, be.jsx = i, be.jsxs = i, be;
 }
@@ -36,7 +36,7 @@ var ye = {};
 var ir;
 function nt() {
   return ir || (ir = 1, process.env.NODE_ENV !== "production" && function() {
-    var r = gr, t = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), s = Symbol.for("react.profiler"), i = Symbol.for("react.provider"), u = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), E = Symbol.for("react.suspense"), m = Symbol.for("react.suspense_list"), R = Symbol.for("react.memo"), O = Symbol.for("react.lazy"), I = Symbol.for("react.offscreen"), V = Symbol.iterator, T = "@@iterator";
+    var r = gr, t = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), s = Symbol.for("react.profiler"), i = Symbol.for("react.provider"), u = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), E = Symbol.for("react.suspense"), m = Symbol.for("react.suspense_list"), R = Symbol.for("react.memo"), H = Symbol.for("react.lazy"), I = Symbol.for("react.offscreen"), V = Symbol.iterator, T = "@@iterator";
     function P(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -64,7 +64,7 @@ function nt() {
     var K = !1, se = !1, le = !1, ee = !1, re = !1, Y;
     Y = Symbol.for("react.module.reference");
     function te(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === o || e === s || re || e === d || e === E || e === m || ee || e === I || K || se || le || typeof e == "object" && e !== null && (e.$$typeof === O || e.$$typeof === R || e.$$typeof === i || e.$$typeof === u || e.$$typeof === f || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === o || e === s || re || e === d || e === E || e === m || ee || e === I || K || se || le || typeof e == "object" && e !== null && (e.$$typeof === H || e.$$typeof === R || e.$$typeof === i || e.$$typeof === u || e.$$typeof === f || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -114,7 +114,7 @@ function nt() {
           case R:
             var p = e.displayName || null;
             return p !== null ? p : h(e.type) || "Memo";
-          case O: {
+          case H: {
             var C = e, j = C._payload, x = C._init;
             try {
               return h(x(j));
@@ -125,14 +125,14 @@ function nt() {
         }
       return null;
     }
-    var g = Object.assign, w = 0, y, z, k, _, H, G, F;
+    var g = Object.assign, w = 0, y, z, k, _, O, G, F;
     function Ee() {
     }
     Ee.__reactDisabledLog = !0;
     function me() {
       {
         if (w === 0) {
-          y = console.log, z = console.info, k = console.warn, _ = console.error, H = console.group, G = console.groupCollapsed, F = console.groupEnd;
+          y = console.log, z = console.info, k = console.warn, _ = console.error, O = console.group, G = console.groupCollapsed, F = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
@@ -174,7 +174,7 @@ function nt() {
               value: _
             }),
             group: g({}, e, {
-              value: H
+              value: O
             }),
             groupCollapsed: g({}, e, {
               value: G
@@ -280,7 +280,7 @@ function nt() {
     function Ar(e, a, l) {
       return Be(e, !1);
     }
-    function Or(e) {
+    function Hr(e) {
       var a = e.prototype;
       return !!(a && a.isReactComponent);
     }
@@ -288,7 +288,7 @@ function nt() {
       if (e == null)
         return "";
       if (typeof e == "function")
-        return Be(e, Or(e));
+        return Be(e, Hr(e));
       if (typeof e == "string")
         return Re(e);
       switch (e) {
@@ -303,7 +303,7 @@ function nt() {
             return Ar(e.render);
           case R:
             return ke(e.type, a, l);
-          case O: {
+          case H: {
             var p = e, C = p._payload, j = p._init;
             try {
               return ke(j(C), a, l);
@@ -321,7 +321,7 @@ function nt() {
       } else
         Ye.setExtraStackFrame(null);
     }
-    function Hr(e, a, l, p, C) {
+    function Or(e, a, l, p, C) {
       {
         var j = Function.call.bind(ge);
         for (var x in e)
@@ -369,8 +369,8 @@ function nt() {
       ref: !0,
       __self: !0,
       __source: !0
-    }, Ke, Xe, Oe;
-    Oe = {};
+    }, Ke, Xe, He;
+    He = {};
     function Fr(e) {
       if (ge.call(e, "ref")) {
         var a = Object.getOwnPropertyDescriptor(e, "ref").get;
@@ -390,7 +390,7 @@ function nt() {
     function Nr(e, a) {
       if (typeof e.ref == "string" && ve.current && a && ve.current.stateNode !== a) {
         var l = h(ve.current.type);
-        Oe[l] || (v('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', h(ve.current.type), e.ref), Oe[l] = !0);
+        He[l] || (v('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', h(ve.current.type), e.ref), He[l] = !0);
       }
     }
     function Gr(e, a) {
@@ -462,7 +462,7 @@ function nt() {
         return Dr(e, S, N, C, p, ve.current, x);
       }
     }
-    var He = M.ReactCurrentOwner, Ze = M.ReactDebugCurrentFrame;
+    var Oe = M.ReactCurrentOwner, Ze = M.ReactDebugCurrentFrame;
     function de(e) {
       if (e) {
         var a = e._owner, l = ke(e.type, e._source, a ? a.type : null);
@@ -477,8 +477,8 @@ function nt() {
     }
     function Qe() {
       {
-        if (He.current) {
-          var e = h(He.current.type);
+        if (Oe.current) {
+          var e = h(Oe.current.type);
           if (e)
             return `
 
@@ -513,7 +513,7 @@ Check the top-level render call using <` + l + ">.");
           return;
         er[l] = !0;
         var p = "";
-        e && e._owner && e._owner !== He.current && (p = " It was passed a child from " + h(e._owner.type) + "."), de(e), v('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', l, p), de(null);
+        e && e._owner && e._owner !== Oe.current && (p = " It was passed a child from " + h(e._owner.type) + "."), de(e), v('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', l, p), de(null);
       }
     }
     function tr(e, a) {
@@ -551,7 +551,7 @@ Check the top-level render call using <` + l + ">.");
           return;
         if (l) {
           var p = h(a);
-          Hr(l, e.props, "prop", p, e);
+          Or(l, e.props, "prop", p, e);
         } else if (a.PropTypes !== void 0 && !We) {
           We = !0;
           var C = h(a);
@@ -786,10 +786,10 @@ function ut(r) {
       }
       P === "[" ? f++ : P === "]" && f--;
     }
-    const R = u.length === 0 ? i : i.substring(E), O = R.startsWith(xr), I = O ? R.substring(1) : R, V = m && m > E ? m - E : void 0;
+    const R = u.length === 0 ? i : i.substring(E), H = R.startsWith(xr), I = H ? R.substring(1) : R, V = m && m > E ? m - E : void 0;
     return {
       modifiers: u,
-      hasImportantModifier: O,
+      hasImportantModifier: H,
       baseClassName: I,
       maybePostfixModifierPosition: V
     };
@@ -825,7 +825,7 @@ function ht(r, t) {
       baseClassName: E,
       maybePostfixModifierPosition: m
     } = n(i);
-    let R = o(m ? E.substring(0, m) : E), O = !!m;
+    let R = o(m ? E.substring(0, m) : E), H = !!m;
     if (!R) {
       if (!m)
         return {
@@ -837,7 +837,7 @@ function ht(r, t) {
           isTailwindClass: !1,
           originalClassName: i
         };
-      O = !1;
+      H = !1;
     }
     const I = ft(u).join(":");
     return {
@@ -845,7 +845,7 @@ function ht(r, t) {
       modifierId: f ? I + xr : I,
       classGroupId: R,
       originalClassName: i,
-      hasPostfixModifier: O
+      hasPostfixModifier: H
     };
   }).reverse().filter((i) => {
     if (!i.isTailwindClass)
@@ -927,7 +927,7 @@ function kt(r) {
 }
 const _t = /* @__PURE__ */ new Set(["image", "url"]);
 function Tt(r) {
-  return fe(r, _t, Ot);
+  return fe(r, _t, Ht);
 }
 function jt(r) {
   return fe(r, "", At);
@@ -948,11 +948,11 @@ function Rr() {
 function At(r) {
   return xt.test(r);
 }
-function Ot(r) {
+function Ht(r) {
   return zt.test(r);
 }
 function Ge() {
-  const r = A("colors"), t = A("spacing"), n = A("blur"), o = A("brightness"), d = A("borderColor"), s = A("borderRadius"), i = A("borderSpacing"), u = A("borderWidth"), f = A("contrast"), E = A("grayscale"), m = A("hueRotate"), R = A("invert"), O = A("gap"), I = A("gradientColorStops"), V = A("gradientColorStopPositions"), T = A("inset"), P = A("margin"), M = A("opacity"), v = A("padding"), ie = A("saturate"), K = A("scale"), se = A("sepia"), le = A("skew"), ee = A("space"), re = A("translate"), Y = () => ["auto", "contain", "none"], te = () => ["auto", "hidden", "clip", "visible", "scroll"], ne = () => ["auto", b, t], c = () => [b, t], h = () => ["", J, X], g = () => ["auto", oe, b], w = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], y = () => ["solid", "dashed", "dotted", "double", "none"], z = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"], k = () => ["start", "end", "center", "between", "around", "evenly", "stretch"], _ = () => ["", "0", b], H = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], G = () => [oe, Te], F = () => [oe, b];
+  const r = A("colors"), t = A("spacing"), n = A("blur"), o = A("brightness"), d = A("borderColor"), s = A("borderRadius"), i = A("borderSpacing"), u = A("borderWidth"), f = A("contrast"), E = A("grayscale"), m = A("hueRotate"), R = A("invert"), H = A("gap"), I = A("gradientColorStops"), V = A("gradientColorStopPositions"), T = A("inset"), P = A("margin"), M = A("opacity"), v = A("padding"), ie = A("saturate"), K = A("scale"), se = A("sepia"), le = A("skew"), ee = A("space"), re = A("translate"), Y = () => ["auto", "contain", "none"], te = () => ["auto", "hidden", "clip", "visible", "scroll"], ne = () => ["auto", b, t], c = () => [b, t], h = () => ["", J, X], g = () => ["auto", oe, b], w = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], y = () => ["solid", "dashed", "dotted", "double", "none"], z = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"], k = () => ["start", "end", "center", "between", "around", "evenly", "stretch"], _ = () => ["", "0", b], O = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], G = () => [oe, Te], F = () => [oe, b];
   return {
     cacheSize: 500,
     separator: ":",
@@ -1009,14 +1009,14 @@ function Ge() {
        * @see https://tailwindcss.com/docs/break-after
        */
       "break-after": [{
-        "break-after": H()
+        "break-after": O()
       }],
       /**
        * Break Before
        * @see https://tailwindcss.com/docs/break-before
        */
       "break-before": [{
-        "break-before": H()
+        "break-before": O()
       }],
       /**
        * Break Inside
@@ -1335,21 +1335,21 @@ function Ge() {
        * @see https://tailwindcss.com/docs/gap
        */
       gap: [{
-        gap: [O]
+        gap: [H]
       }],
       /**
        * Gap X
        * @see https://tailwindcss.com/docs/gap
        */
       "gap-x": [{
-        "gap-x": [O]
+        "gap-x": [H]
       }],
       /**
        * Gap Y
        * @see https://tailwindcss.com/docs/gap
        */
       "gap-y": [{
-        "gap-y": [O]
+        "gap-y": [H]
       }],
       /**
        * Justify Content
@@ -2967,7 +2967,7 @@ function Ge() {
     }
   };
 }
-function Ht(r, {
+function Ot(r, {
   cacheSize: t,
   prefix: n,
   separator: o,
@@ -2997,7 +2997,7 @@ function $t(r, t) {
     }
 }
 function It(r, ...t) {
-  return typeof r == "function" ? Ne(Ge, r, ...t) : Ne(() => Ht(Ge(), r), ...t);
+  return typeof r == "function" ? Ne(Ge, r, ...t) : Ne(() => Ot(Ge(), r), ...t);
 }
 const Cr = /* @__PURE__ */ Ne(Ge);
 var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) => r || void 0, ze = (...r) => kr(br(r).filter(Boolean).join(" ")), Me = null, q = {}, Le = !1, xe = (...r) => (t) => t.twMerge ? ((!Me || Le) && (Le = !1, Me = D(q) ? Cr : It({ ...q, extend: { theme: q.theme, classGroups: q.classGroups, conflictingClassGroupModifiers: q.conflictingClassGroupModifiers, conflictingClassGroups: q.conflictingClassGroups, ...q.extend } })), kr(Me(ze(r)))) : ze(r), ur = (r, t) => {
@@ -3006,8 +3006,8 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
 }, _r = (r, t) => {
   let { extend: n = null, slots: o = {}, variants: d = {}, compoundVariants: s = [], compoundSlots: i = [], defaultVariants: u = {} } = r, f = { ...Mt, ...t }, E = n != null && n.base ? ze(n.base, r == null ? void 0 : r.base) : r == null ? void 0 : r.base, m = n != null && n.variants && !D(n.variants) ? wr(d, n.variants) : d, R = n != null && n.defaultVariants && !D(n.defaultVariants) ? { ...n.defaultVariants, ...u } : u;
   !D(f.twMergeConfig) && !at(f.twMergeConfig, q) && (Le = !0, q = f.twMergeConfig);
-  let O = D(n == null ? void 0 : n.slots), I = D(o) ? {} : { base: ze(r == null ? void 0 : r.base, O && (n == null ? void 0 : n.base)), ...o }, V = O ? I : ur({ ...n == null ? void 0 : n.slots }, D(I) ? { base: r == null ? void 0 : r.base } : I), T = D(n == null ? void 0 : n.compoundVariants) ? s : yr(n == null ? void 0 : n.compoundVariants, s), P = (v) => {
-    if (D(m) && D(o) && O) return xe(E, v == null ? void 0 : v.class, v == null ? void 0 : v.className)(f);
+  let H = D(n == null ? void 0 : n.slots), I = D(o) ? {} : { base: ze(r == null ? void 0 : r.base, H && (n == null ? void 0 : n.base)), ...o }, V = H ? I : ur({ ...n == null ? void 0 : n.slots }, D(I) ? { base: r == null ? void 0 : r.base } : I), T = D(n == null ? void 0 : n.compoundVariants) ? s : yr(n == null ? void 0 : n.compoundVariants, s), P = (v) => {
+    if (D(m) && D(o) && H) return xe(E, v == null ? void 0 : v.class, v == null ? void 0 : v.className)(f);
     if (T && !Array.isArray(T)) throw new TypeError(`The "compoundVariants" prop must be an array. Received: ${typeof T}`);
     if (i && !Array.isArray(i)) throw new TypeError(`The "compoundSlots" prop must be an array. Received: ${typeof i}`);
     let ie = (c, h, g = [], w) => {
@@ -3019,8 +3019,8 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
           let k = h[z];
           if (k && typeof k == "string") {
             let _ = lr(k);
-            y[w] ? y[w] = y[w].concat(_.split(" ").map((H) => `${c}:${H}`)) : y[w] = _.split(" ").map((H) => `${c}:${H}`);
-          } else Array.isArray(k) && k.length > 0 && (y[w] = k.reduce((_, H) => _.concat(`${c}:${H}`), []));
+            y[w] ? y[w] = y[w].concat(_.split(" ").map((O) => `${c}:${O}`)) : y[w] = _.split(" ").map((O) => `${c}:${O}`);
+          } else Array.isArray(k) && k.length > 0 && (y[w] = k.reduce((_, O) => _.concat(`${c}:${O}`), []));
         }
       }
       return y;
@@ -3030,8 +3030,8 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
       if (!z || D(z)) return null;
       let k = (y = w == null ? void 0 : w[c]) != null ? y : v == null ? void 0 : v[c];
       if (k === null) return null;
-      let _ = sr(k), H = Array.isArray(f.responsiveVariants) && f.responsiveVariants.length > 0 || f.responsiveVariants === !0, G = R == null ? void 0 : R[c], F = [];
-      if (typeof _ == "object" && H) for (let [pe, ce] of Object.entries(_)) {
+      let _ = sr(k), O = Array.isArray(f.responsiveVariants) && f.responsiveVariants.length > 0 || f.responsiveVariants === !0, G = R == null ? void 0 : R[c], F = [];
+      if (typeof _ == "object" && O) for (let [pe, ce] of Object.entries(_)) {
         let he = z[ce];
         if (pe === "initial") {
           G = ce;
@@ -3059,14 +3059,14 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
       let g = [];
       for (let { class: w, className: y, ...z } of c) {
         let k = !0;
-        for (let [_, H] of Object.entries(z)) {
+        for (let [_, O] of Object.entries(z)) {
           let G = re(_, h);
-          if (Array.isArray(H)) {
-            if (!H.includes(G[_])) {
+          if (Array.isArray(O)) {
+            if (!O.includes(G[_])) {
               k = !1;
               break;
             }
-          } else if (G[_] !== H) {
+          } else if (G[_] !== O) {
             k = !1;
             break;
           }
@@ -3087,8 +3087,8 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
         if (!D(z)) {
           let k = !0;
           for (let _ of Object.keys(z)) {
-            let H = re(_, c)[_];
-            if (H === void 0 || (Array.isArray(z[_]) ? !z[_].includes(H) : z[_] !== H)) {
+            let O = re(_, c)[_];
+            if (O === void 0 || (Array.isArray(z[_]) ? !z[_].includes(O) : z[_] !== O)) {
               k = !1;
               break;
             }
@@ -3099,7 +3099,7 @@ var Mt = { twMerge: !0, twMergeConfig: {}, responsiveVariants: !1 }, kr = (r) =>
       }
       return h;
     };
-    if (!D(o) || !O) {
+    if (!D(o) || !H) {
       let c = {};
       if (typeof V == "object" && !D(V)) for (let h of Object.keys(V)) c[h] = (g) => {
         var w, y;
@@ -3264,7 +3264,7 @@ const Gt = _r(Tr), {
   iconWrapperEnd: Ut,
   icon: pr
 } = Gt();
-var fn = ({
+var mn = ({
   label: r,
   variant: t = "primary",
   size: n = "500",
@@ -3304,7 +3304,7 @@ const Yt = _r(Tr), {
   iconEnd: !1,
   class: ""
 };
-function mn(r) {
+function pn(r) {
   r = { ...Qt, ...r };
   const t = {
     variant: r.variant,
@@ -3340,6 +3340,14 @@ class en {
       variants: {},
       plugins: []
     };
+  }
+  /**
+   * Устанавливает конфигурацию тени.
+   * @param boxShadowConfig Объект с определениями теней.
+   * @returns this для цепочки вызовов.
+   */
+  setBoxShadow(t) {
+    return this.config.theme.boxShadow = t, this;
   }
   /**
    * Устанавливает конфигурацию цветов.
@@ -3479,419 +3487,445 @@ class en {
   }
 }
 var rn = {
-  ".title-1": {
-    fontSize: "2.125rem",
-    lineHeight: "2.5rem",
-    letterSpacing: "-0.10000000149011612rem",
+  ".title1": {
+    fontSize: "1.75rem",
+    lineHeight: 1.1428571428571428,
+    letterSpacing: "-0.07500000298023224rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
-      fontSize: "2.5rem",
-      lineHeight: "3rem",
-      letterSpacing: "-0.125rem"
+      fontSize: "2.125rem",
+      lineHeight: 1.1764705882352942,
+      letterSpacing: "-0.10000000149011612rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "2.5rem",
-      lineHeight: "3rem",
+      lineHeight: 1.2,
       letterSpacing: "-0.125rem"
     }
   },
-  ".title-2": {
-    fontSize: "1.75rem",
-    lineHeight: "2rem",
-    letterSpacing: "-0.07500000298023224rem",
+  ".title2": {
+    fontSize: "1.5rem",
+    lineHeight: 1.1666666666666667,
+    letterSpacing: "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
-      fontSize: "2rem",
-      lineHeight: "2.25rem",
-      letterSpacing: "-0.10000000149011612rem"
+      fontSize: "1.75rem",
+      lineHeight: 1.1428571428571428,
+      letterSpacing: "-0.07500000298023224rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "2.125rem",
-      lineHeight: "2.5rem",
+      lineHeight: 1.1764705882352942,
       letterSpacing: "-0.10000000149011612rem"
     }
   },
-  ".title-3": {
-    fontSize: "1.375rem",
-    lineHeight: "1.625rem",
+  ".title3": {
+    fontSize: "1.125rem",
+    lineHeight: 1.2222222222222223,
     letterSpacing: "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1.5rem",
-      lineHeight: "1.75rem",
+      lineHeight: 1.1666666666666667,
       letterSpacing: "-0.0625rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.75rem",
-      lineHeight: "2rem",
+      lineHeight: 1.1428571428571428,
       letterSpacing: "-0.07500000298023224rem"
     }
   },
-  ".title-4": {
-    fontSize: "1.25rem",
-    lineHeight: "1.5rem",
-    letterSpacing: "-0.0625rem",
+  ".title4": {
+    fontSize: "1.0625rem",
+    lineHeight: 1.1764705882352942,
+    letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
-      fontSize: "1.25rem",
-      lineHeight: "1.5rem",
+      fontSize: "1.125rem",
+      lineHeight: 1.2222222222222223,
       letterSpacing: "-0.0625rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.5rem",
-      lineHeight: "1.75rem",
+      lineHeight: 1.1666666666666667,
       letterSpacing: "-0.0625rem"
     }
   },
-  ".title-5": {
+  ".title5": {
     fontSize: "1.0625rem",
-    lineHeight: "1.25rem",
+    lineHeight: 1.1764705882352942,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1.0625rem",
-      lineHeight: "1.25rem",
+      lineHeight: 1.1764705882352942,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.125rem",
-      lineHeight: "1.375rem",
+      lineHeight: 1.2222222222222223,
       letterSpacing: "-0.0625rem"
     }
   },
   ".heading-1": {
     fontSize: "1.25rem",
-    lineHeight: "1.5rem",
+    lineHeight: 1.2,
     letterSpacing: "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1.5rem",
-      lineHeight: "1.75rem",
+      lineHeight: 1.1666666666666667,
       letterSpacing: "-0.0625rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "2rem",
-      lineHeight: "2.25rem",
+      lineHeight: 1.125,
       letterSpacing: "-0.0625rem"
     }
   },
   ".heading-2": {
     fontSize: "1.125rem",
-    lineHeight: "1.375rem",
+    lineHeight: 1.2222222222222223,
     letterSpacing: "-0.02500000037252903rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1.25rem",
-      lineHeight: "1.5rem",
+      lineHeight: 1.2,
       letterSpacing: "-0.05000000074505806rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.25rem",
-      lineHeight: "1.5rem",
+      lineHeight: 1.2,
       letterSpacing: "-0.05000000074505806rem"
     }
   },
   ".heading-3": {
     fontSize: "1.0625rem",
-    lineHeight: "1.25rem",
+    lineHeight: 1.1764705882352942,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1.0625rem",
-      lineHeight: "1.25rem",
+      lineHeight: 1.1764705882352942,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.125rem",
-      lineHeight: "1.375rem",
+      lineHeight: 1.2222222222222223,
       letterSpacing: "-0.02500000037252903rem"
     }
   },
   ".heading-4": {
     fontSize: "1rem",
-    lineHeight: "1.25rem",
+    lineHeight: 1.25,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1rem",
-      lineHeight: "1.25rem",
+      lineHeight: 1.25,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1rem",
-      lineHeight: "1.25rem",
+      lineHeight: 1.25,
       letterSpacing: "0rem"
     }
   },
   ".heading-5": {
     fontSize: "0.875rem",
-    lineHeight: "1.0625rem",
+    lineHeight: 1.2142857142857142,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "0.875rem",
-      lineHeight: "1.0625rem",
+      lineHeight: 1.2142857142857142,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "0.875rem",
-      lineHeight: "1.0625rem",
+      lineHeight: 1.2142857142857142,
       letterSpacing: "0rem"
     }
   },
   ".display-1": {
     fontSize: "3rem",
-    lineHeight: "3.625rem",
+    lineHeight: 1.2083333333333333,
     letterSpacing: "-0.10000000149011612rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "4rem",
-      lineHeight: "4.75rem",
+      lineHeight: 1.1875,
       letterSpacing: "-0.125rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "4.375rem",
-      lineHeight: "5.25rem",
+      lineHeight: 1.2,
       letterSpacing: "-0.125rem"
     }
   },
   ".display-2": {
     fontSize: "2.5rem",
-    lineHeight: "3rem",
+    lineHeight: 1.2,
     letterSpacing: "-0.07500000298023224rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "3.625rem",
-      lineHeight: "4.375rem",
+      lineHeight: 1.206896551724138,
       letterSpacing: "-0.10000000149011612rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "4rem",
-      lineHeight: "4.75rem",
+      lineHeight: 1.1875,
       letterSpacing: "-0.16249999403953552rem"
     }
   },
   ".display-3": {
     fontSize: "2.125rem",
-    lineHeight: "2.5rem",
+    lineHeight: 1.1764705882352942,
     letterSpacing: "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "3.25rem",
-      lineHeight: "3.875rem",
+      lineHeight: 1.1923076923076923,
       letterSpacing: "-0.0625rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "3.625rem",
-      lineHeight: "4.375rem",
+      lineHeight: 1.206896551724138,
       letterSpacing: "-0.07500000298023224rem"
     }
   },
   ".display-4": {
     fontSize: "2rem",
-    lineHeight: "2.25rem",
+    lineHeight: 1.125,
     letterSpacing: "-0.0625rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "3rem",
-      lineHeight: "3.625rem",
+      lineHeight: 1.2083333333333333,
       letterSpacing: "-0.0625rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "3.25rem",
-      lineHeight: "3.875rem",
+      lineHeight: 1.1923076923076923,
       letterSpacing: "-0.0625rem"
     }
   },
   ".display-5": {
     fontSize: "1.75rem",
-    lineHeight: "2rem",
+    lineHeight: 1.1428571428571428,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "2.5rem",
-      lineHeight: "3rem",
+      lineHeight: 1.2,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "3rem",
-      lineHeight: "3.625rem",
+      lineHeight: 1.2083333333333333,
       letterSpacing: "-0.0625rem"
     }
   },
   ".body-50": {
     fontSize: "0.625rem",
-    lineHeight: "0.875rem",
+    lineHeight: 1.4,
     letterSpacing: "0.05000000074505806rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "0.625rem",
-      lineHeight: "0.875rem",
+      lineHeight: 1.4,
       letterSpacing: "0.05000000074505806rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "0.625rem",
-      lineHeight: "0.875rem",
+      lineHeight: 1.4,
       letterSpacing: "0.05000000074505806rem"
     }
   },
   ".body-100": {
     fontSize: "0.6875rem",
-    lineHeight: "0.9624999761581421rem",
+    lineHeight: 1.3636363636363635,
     letterSpacing: "0.05000000074505806rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "0.6875rem",
-      lineHeight: "0.9375rem",
+      lineHeight: 1.3636363636363635,
       letterSpacing: "0.05000000074505806rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "0.6875rem",
-      lineHeight: "0.9375rem",
+      lineHeight: 1.3636363636363635,
       letterSpacing: "0.05000000074505806rem"
     }
   },
   ".body-200": {
     fontSize: "0.75rem",
-    lineHeight: "1.0625rem",
+    lineHeight: 1.4166666666666667,
     letterSpacing: "0.05000000074505806rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "0.75rem",
-      lineHeight: "1.0625rem",
+      lineHeight: 1.4166666666666667,
       letterSpacing: "0.05000000074505806rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "0.75rem",
-      lineHeight: "1.0625rem",
+      lineHeight: 1.4166666666666667,
       letterSpacing: "0.02500000037252903rem"
     }
   },
   ".body-300": {
-    fontSize: "0.75rem",
-    lineHeight: "1.0625rem",
-    letterSpacing: "0.05000000074505806rem",
+    fontSize: "0.8125rem",
+    lineHeight: 1.3846153846153846,
+    letterSpacing: "0.02500000037252903rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
-      fontSize: "0.75rem",
-      lineHeight: "1.0625rem",
+      fontSize: "0.8125rem",
+      lineHeight: 1.3846153846153846,
       letterSpacing: "0.02500000037252903rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "0.8125rem",
-      lineHeight: "1.125rem",
+      lineHeight: 1.3846153846153846,
       letterSpacing: "0.02500000037252903rem"
     }
   },
   ".body-400": {
-    fontSize: "0.75rem",
-    lineHeight: "1.0625rem",
-    letterSpacing: "0.02500000037252903rem",
+    fontSize: "0.875rem",
+    lineHeight: 1.4285714285714286,
+    letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
-      fontSize: "0.8125rem",
-      lineHeight: "1.125rem",
-      letterSpacing: "0.02500000037252903rem"
+      fontSize: "0.875rem",
+      lineHeight: 1.4285714285714286,
+      letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "0.875rem",
-      lineHeight: "1.25rem",
+      lineHeight: 1.4285714285714286,
       letterSpacing: "0rem"
     }
   },
   ".body-500": {
-    fontSize: "0.8125rem",
-    lineHeight: "1.125rem",
-    letterSpacing: "0.02500000037252903rem",
+    fontSize: "0.875rem",
+    lineHeight: 1.2857142857142858,
+    letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "0.875rem",
-      lineHeight: "1.25rem",
+      lineHeight: 1.4285714285714286,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "0.9375rem",
-      lineHeight: "1.375rem",
+      lineHeight: 1.4666666666666666,
       letterSpacing: "0rem"
     }
   },
   ".body-600": {
     fontSize: "0.875rem",
-    lineHeight: "1.25rem",
+    lineHeight: 1.4285714285714286,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "0.9375rem",
-      lineHeight: "1.375rem",
+      lineHeight: 1.4666666666666666,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1rem",
-      lineHeight: "1.375rem",
+      lineHeight: 1.375,
       letterSpacing: "0rem"
     }
   },
   ".body-700": {
     fontSize: "0.9375rem",
-    lineHeight: "1.375rem",
+    lineHeight: 1.4666666666666666,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1rem",
-      lineHeight: "1.375rem",
+      lineHeight: 1.375,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.0625rem",
-      lineHeight: "1.5rem",
+      lineHeight: 1.411764705882353,
       letterSpacing: "0rem"
     }
   },
   ".body-800": {
     fontSize: "1rem",
-    lineHeight: "1.375rem",
+    lineHeight: 1.375,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1.0625rem",
-      lineHeight: "1.5rem",
+      lineHeight: 1.411764705882353,
       letterSpacing: "0rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.125rem",
-      lineHeight: "1.625rem",
+      lineHeight: 1.4444444444444444,
       letterSpacing: "-0.02500000037252903rem"
     }
   },
   ".body-900": {
     fontSize: "1.0625rem",
-    lineHeight: "1.5rem",
+    lineHeight: 1.411764705882353,
     letterSpacing: "0rem",
     "@media screen and (min-width: 31.0625rem) and (max-width: 64.0625rem)": {
       fontSize: "1.125rem",
-      lineHeight: "1.625rem",
+      lineHeight: 1.4444444444444444,
       letterSpacing: "-0.02500000037252903rem"
     },
     "@media screen and (min-width: 64.0625rem)": {
       fontSize: "1.25rem",
-      lineHeight: "1.75rem",
+      lineHeight: 1.4,
       letterSpacing: "-0.05000000074505806rem"
     }
   },
-  ".control-1000": {
-    fontSize: "2rem"
-  },
-  ".control-950": {
-    fontSize: "1.75rem"
-  },
-  ".control-900": {
-    fontSize: "1.5rem"
-  },
-  ".control-850": {
-    fontSize: "1.25rem"
-  },
-  ".control-800": {
-    fontSize: "1.125rem"
-  },
-  ".control-700": {
-    fontSize: "1.0625rem"
-  },
-  ".control-600": {
-    fontSize: "1rem"
-  },
-  ".control-500": {
-    fontSize: "0.9375rem"
-  },
-  ".control-400": {
-    fontSize: "0.875rem"
-  },
-  ".control-300": {
-    fontSize: "0.8125rem"
-  },
-  ".control-200": {
-    fontSize: "0.75rem"
+  ".control-50": {
+    fontSize: "0.625rem",
+    lineHeight: 1.2,
+    letterSpacing: "0.05000000074505806rem"
   },
   ".control-100": {
-    fontSize: "0.6875rem"
+    fontSize: "0.6875rem",
+    lineHeight: 1.4545454545454546,
+    letterSpacing: "0.05000000074505806rem"
   },
-  ".control-50": {
-    fontSize: "0.625rem"
+  ".control-200": {
+    fontSize: "0.75rem",
+    lineHeight: 1.3333333333333333,
+    letterSpacing: "0.02500000037252903rem"
+  },
+  ".control-300": {
+    fontSize: "0.8125rem",
+    lineHeight: 1.2307692307692308,
+    letterSpacing: "0.02500000037252903rem"
+  },
+  ".control-400": {
+    fontSize: "0.875rem",
+    lineHeight: 1.4285714285714286,
+    letterSpacing: "0rem"
+  },
+  ".control-500": {
+    fontSize: "0.9375rem",
+    lineHeight: 1.3333333333333333,
+    letterSpacing: "0rem"
+  },
+  ".control-600": {
+    fontSize: "1rem",
+    lineHeight: 1.25,
+    letterSpacing: "0rem"
+  },
+  ".control-700": {
+    fontSize: "1.0625rem",
+    lineHeight: 1.411764705882353,
+    letterSpacing: "0rem"
+  },
+  ".control-800": {
+    fontSize: "1.125rem",
+    lineHeight: 1.3333333333333333,
+    letterSpacing: "-0.02500000037252903rem"
+  },
+  ".control-850": {
+    fontSize: "1.25rem",
+    lineHeight: 1.4,
+    letterSpacing: "-0.05000000074505806rem"
+  },
+  ".control-900": {
+    fontSize: "1.5rem",
+    lineHeight: 1.3333333333333333,
+    letterSpacing: "-0.0625rem"
+  },
+  ".control-950": {
+    fontSize: "1.75rem",
+    lineHeight: 1.2857142857142858,
+    letterSpacing: "-0.07500000298023224rem"
+  },
+  ".control-1000": {
+    fontSize: "2rem",
+    lineHeight: 1.25,
+    letterSpacing: "-0.10000000149011612rem"
   }
 }, tn = ({ addUtilities: r }) => r(rn), nn = {
   ":root": {
@@ -3942,9 +3976,14 @@ var ln = {
   600: "var(--rounded-600)",
   full: on,
   none: sn
+}, cn = {
+  "shadow-elevation1": "0rem 0.125rem 0.25rem -0.125rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.0625rem 0.375rem -0.0625rem rgb(var(--extended-shadow) / 10)",
+  "shadow-elevation2": "0rem 0.25rem 0.375rem -0.25rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.25rem 0.5rem -0.25rem rgb(var(--extended-shadow) / 10)",
+  "shadow-elevation3": "0rem 0.5rem 0.75rem -0.5rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.375rem 1.125rem -0.375rem rgb(var(--extended-shadow) / 10)",
+  "shadow-elevation4": "0rem 0.75rem 1.5rem -0.75rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.5rem 1.625rem -0.5rem rgb(var(--extended-shadow) / 10)"
 };
-const cn = "rgb(255 255 255 / <alpha-value>)";
-var dn = {
+const dn = "rgb(255 255 255 / <alpha-value>)";
+var un = {
   "primary-core": "rgb(var(--primary-core ) / <alpha-value>)",
   "primary-chroma": "rgb(var(--primary-chroma) / <alpha-value>)",
   "primary-dim": "rgb(var(--primary-dim) / <alpha-value>)",
@@ -4060,14 +4099,15 @@ var dn = {
   "inverse-surface-on-low": "rgb(var(--inverse-surface-on-low) / <alpha-value>)",
   "inverse-surface-on-lowest": "rgb(var(--inverse-surface-on-lowest) / <alpha-value>)",
   "inverse-surface-on-accent": "rgb(var(--inverse-surface-on-accent) / <alpha-value>)",
-  white: cn
-}, pn = (r) => {
+  white: dn,
+  "extended-shadow": "rgb(28 28 28 / <alpha-value>)"
+}, hn = (r) => {
   const t = new en();
-  return t.setColors(dn), t.setBorderRadius(ln), t.addPlugin(tn), t.addPlugin(an), r(t), t.build();
+  return t.setColors(un), t.setBorderRadius(ln), t.setBoxShadow(cn), t.addPlugin(tn), t.addPlugin(an), r(t), t.build();
 };
 export {
-  fn as Button,
+  mn as Button,
   fr as Icon,
-  pn as createTailwindConfig,
-  mn as makeButton
+  hn as createTailwindConfig,
+  pn as makeButton
 };
