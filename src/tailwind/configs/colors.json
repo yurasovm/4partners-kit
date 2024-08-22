@@ -115,5 +115,5 @@
 	"inverse-surface-on-lowest": "rgb(var(--inverse-surface-on-lowest) / <alpha-value>)",
 	"inverse-surface-on-accent": "rgb(var(--inverse-surface-on-accent) / <alpha-value>)",
 	"white": "rgb(255 255 255 / <alpha-value>)",
-	"extended-shadow": "rgb(28 28 28 / <alpha-value>)"
+	"extended-shadow": "rgb(var(--extended-shadow) / <alpha-value>)"
   }

@@ -1,5 +1,5 @@
 {
-	".title1": {
+	".title-1": {
 	  "fontSize": "1.75rem",
 	  "lineHeight": 1.1428571428571428,
 	  "letterSpacing": "-0.07500000298023224rem",
@@ -14,7 +14,7 @@
 		"letterSpacing": "-0.125rem"
 	  }
 	},
-	".title2": {
+	".title-2": {
 	  "fontSize": "1.5rem",
 	  "lineHeight": 1.1666666666666667,
 	  "letterSpacing": "-0.0625rem",
@@ -29,7 +29,7 @@
 		"letterSpacing": "-0.10000000149011612rem"
 	  }
 	},
-	".title3": {
+	".title-3": {
 	  "fontSize": "1.125rem",
 	  "lineHeight": 1.2222222222222223,
 	  "letterSpacing": "-0.0625rem",
@@ -44,7 +44,7 @@
 		"letterSpacing": "-0.07500000298023224rem"
 	  }
 	},
-	".title4": {
+	".title-4": {
 	  "fontSize": "1.0625rem",
 	  "lineHeight": 1.1764705882352942,
 	  "letterSpacing": "0rem",
@@ -59,7 +59,7 @@
 		"letterSpacing": "-0.0625rem"
 	  }
 	},
-	".title5": {
+	".title-5": {
 	  "fontSize": "1.0625rem",
 	  "lineHeight": 1.1764705882352942,
 	  "letterSpacing": "0rem",
