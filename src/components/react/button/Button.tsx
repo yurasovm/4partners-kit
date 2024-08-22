@@ -1,9 +1,8 @@
-import {tv} from 'tailwind-variants';
+import {tv, type VariantProps} from 'tailwind-variants';
 import tvConfig from '../../../tv-configs/button.json';
-import type { IconType } from '../../../../types';
 import Icon from '../icon/Icon';
 import { cn } from '../../../helpers/tailwind';
-import React from 'react';
+import type { ButtonProps } from './types';
 
 const tvButton = tv(tvConfig);
 
@@ -14,21 +13,9 @@ const {
 	iconWrapperStart : slotIconWrapperStart,
 	iconWrapperEnd : slotIconWrapperEnd,
 	icon : slotIcon,
-} = tvButton();
+}:any = tvButton();
 
-type SizeType = '200' | '300' | '400' | '500' | '600';
-type VariantType = 'primary' | 'ghost' | 'addition' | 'secondary' | 'tertiary' | 'contrast';
-
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-	label?: string,
-	size?: SizeType,
-	variant?: VariantType,
-	iconStart?: IconType,
-	iconEnd?: IconType,
-	className?:string,
-}
-
-export default ({
+const Button = ({
 	label,
 	variant = 'primary',
 	size = '500',
@@ -68,3 +55,5 @@ export default ({
 		</button>
 	)
 }
+
+export default Button;

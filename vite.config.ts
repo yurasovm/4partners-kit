@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 // import dts from 'vite-plugin-dts';
+import typescript from 'rollup-plugin-typescript2';
 import { resolve } from 'path';
 import { copyFileSync, mkdirSync, readdirSync } from 'fs';
 
@@ -8,10 +9,21 @@ export default defineConfig({
 	plugins: [
 		react(),
 		// dts({
-			// include: ['src'],
-			// insertTypesEntry: true,
-			// rollupTypes: true
+		// 	include: ['src/**/*.ts', 'src/**/*.tsx'],
+		// 	exclude: ['src/**/*.spec.ts', 'src/**/*.test.ts'],
+		// 	insertTypesEntry: true,
+		// 	rollupTypes: true,
+		// 	aliasesExclude: [/^@\//],
+		// 	compilerOptions: {
+		// 		skipLibCheck: true,
+		// 		emitDeclarationOnly: true,
+		// 	},
 		// }),
+		typescript({
+			// tsconfig: './tsconfig.json',
+			// declarationDir: './dist',
+			// emitDeclarationOnly: true,
+		  }),
 		{
 			name: 'copy-tv-configs',
 			generateBundle() {
@@ -40,8 +52,7 @@ export default defineConfig({
 				globals: {
 					react: 'React',
 					'react-dom': 'ReactDOM',
-				},
-				generatedCode: 'es5'
+				}
 			},
 		},
 	},

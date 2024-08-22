@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"jsx": "react-jsx",
-		"declaration": false,
+		"declaration": true,
 		"target": "ES2018",
 		"module": "ESNext",
 		"lib": ["ESNext", "DOM"],
@@ -17,14 +17,13 @@
 		"forceConsistentCasingInFileNames": true,
 		"allowSyntheticDefaultImports": true,
 		"experimentalDecorators": true,
-		"baseUrl": "./",
+		"baseUrl": "src",
 		"paths": {
 			"*": ["src/*"],
-			"@/types": [ "./types/" ],
-			"@/types/*": [ "./types/*" ],
+			"@/types/*": ["src/types/*"]
 		},
 		"types": ["node"]
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts"],
+	"include": ["src/**/*.ts", "src/**/*.tsx", "src/types/**/*.d.ts"],
 	"exclude": ["node_modules"]
 }

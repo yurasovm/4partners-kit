@@ -1,4 +1,4 @@
-import type { BoxShadowConfig, TailwindConfig, TailwindThemeConfig, ColorConfig, BorderRadiusConfig, FontFamilyConfig, ScreensConfig, SpacingConfig, ExtendConfig, PluginFunction } from '../../types';
+import type { BoxShadowConfig, TailwindConfig, TailwindThemeConfig, ColorConfig, BorderRadiusConfig, FontFamilyConfig, ScreensConfig, SpacingConfig, ExtendConfig, PluginFunction } from '../types';
 
 /**
  * Класс для построения конфигурации Tailwind CSS.
