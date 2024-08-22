@@ -1,8 +1,7 @@
 {
 	"compilerOptions": {
-		"declaration": true,
-		"declarationDir": "./dist",
-		"emitDeclarationOnly": true,
+		"jsx": "react-jsx",
+		"declaration": false,
 		"target": "ES2018",
 		"module": "ESNext",
 		"lib": ["ESNext", "DOM"],
@@ -17,9 +16,12 @@
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"allowSyntheticDefaultImports": true,
-		"baseUrl": ".",
+		"experimentalDecorators": true,
+		"baseUrl": "./",
 		"paths": {
-			"*": ["src/*"]
+			"*": ["src/*"],
+			"@/types": [ "./types/" ],
+			"@/types/*": [ "./types/*" ],
 		},
 		"types": ["node"]
 	},

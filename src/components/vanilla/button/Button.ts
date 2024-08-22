@@ -22,7 +22,7 @@ const defProps = {
 	class : '',
 }
 
-export function makeButton( props ): string {
+export function makeButton( props: any ): string {
 	props = {...defProps, ...props};
 
 	const slotsProps = {

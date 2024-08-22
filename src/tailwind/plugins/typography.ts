@@ -1,2 +1,2 @@
 import json from '../configs/typography.json';
-export default ({ addUtilities }) => addUtilities( json );
+export default ({ addUtilities }: any) => addUtilities( json );

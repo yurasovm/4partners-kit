@@ -1,8 +1,8 @@
 import {tv} from 'tailwind-variants';
 import tvConfig from '../../../tv-configs/button.json';
-import type { IconType } from '../../../types/icon.ts';
-import Icon from '../icon/Icon.tsx';
-import { cn } from '../../../helpers/tailwind.ts';
+import type { IconType } from '../../../../types';
+import Icon from '../icon/Icon';
+import { cn } from '../../../helpers/tailwind';
 import React from 'react';
 
 const tvButton = tv(tvConfig);

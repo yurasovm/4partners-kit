@@ -1,5 +1,5 @@
 // import type { IconType } from '../../../types/icon';
-import React from 'react';
+// import React from 'react';
 
 interface IconProps {
   name: string;

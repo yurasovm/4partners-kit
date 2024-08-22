@@ -1,29 +1,4 @@
-type ColorConfig = Record<string, string | Record<string, string>>;
-type BorderRadiusConfig = Record<string, string>;
-type FontFamilyConfig = Record<string, string[]>;
-type ScreensConfig = Record<string, string>;
-type SpacingConfig = Record<string, string>;
-type ExtendConfig = Partial<ThemeConfig>;
-type PluginFunction = (api: any) => void;
-
-interface ThemeConfig {
-  colors?: ColorConfig;
-  borderRadius?: BorderRadiusConfig;
-  fontFamily?: FontFamilyConfig;
-  screens?: ScreensConfig;
-  spacing?: SpacingConfig;
-  extend?: ExtendConfig;
-}
-
-interface TailwindConfig {
-  content: string[];
-  theme: ThemeConfig;
-  variants: Record<string, any>;
-  plugins: PluginFunction[];
-  prefix?: string;
-  important?: boolean | string;
-  darkMode?: 'media' | 'class' | false;
-}
+import type { BoxShadowConfig, TailwindConfig, TailwindThemeConfig, ColorConfig, BorderRadiusConfig, FontFamilyConfig, ScreensConfig, SpacingConfig, ExtendConfig, PluginFunction } from '../../types';
 
 /**
  * Класс для построения конфигурации Tailwind CSS.
@@ -42,6 +17,16 @@ export default class TailwindConfigBuilder {
       variants: {},
       plugins: [],
     };
+  }
+
+  /**
+   * Устанавливает конфигурацию тени.
+   * @param boxShadowConfig Объект с определениями теней.
+   * @returns this для цепочки вызовов.
+   */
+  setBoxShadow(boxShadowConfig: BoxShadowConfig): this {
+    this.config.theme.boxShadow = boxShadowConfig;
+    return this;
   }
 
   /**
@@ -89,7 +74,7 @@ export default class TailwindConfigBuilder {
    * @param themeConfig Объект с настройками темы.
    * @returns this для цепочки вызовов.
    */
-  setTheme(themeConfig: ThemeConfig): this {
+  setTheme(themeConfig: TailwindThemeConfig): this {
     this.config.theme = themeConfig;
     return this;
   }
