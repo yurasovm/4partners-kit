@@ -3264,7 +3264,7 @@ const Gt = _r(Tr), {
   iconWrapperEnd: Ut,
   icon: pr
 } = Gt();
-var mn = ({
+var vn = ({
   label: r,
   variant: t = "primary",
   size: n = "500",
@@ -3304,7 +3304,7 @@ const Yt = _r(Tr), {
   iconEnd: !1,
   class: ""
 };
-function pn(r) {
+function bn(r) {
   r = { ...Qt, ...r };
   const t = {
     variant: r.variant,
@@ -3487,7 +3487,7 @@ class en {
   }
 }
 var rn = {
-  ".title1": {
+  ".title-1": {
     fontSize: "1.75rem",
     lineHeight: 1.1428571428571428,
     letterSpacing: "-0.07500000298023224rem",
@@ -3502,7 +3502,7 @@ var rn = {
       letterSpacing: "-0.125rem"
     }
   },
-  ".title2": {
+  ".title-2": {
     fontSize: "1.5rem",
     lineHeight: 1.1666666666666667,
     letterSpacing: "-0.0625rem",
@@ -3517,7 +3517,7 @@ var rn = {
       letterSpacing: "-0.10000000149011612rem"
     }
   },
-  ".title3": {
+  ".title-3": {
     fontSize: "1.125rem",
     lineHeight: 1.2222222222222223,
     letterSpacing: "-0.0625rem",
@@ -3532,7 +3532,7 @@ var rn = {
       letterSpacing: "-0.07500000298023224rem"
     }
   },
-  ".title4": {
+  ".title-4": {
     fontSize: "1.0625rem",
     lineHeight: 1.1764705882352942,
     letterSpacing: "0rem",
@@ -3547,7 +3547,7 @@ var rn = {
       letterSpacing: "-0.0625rem"
     }
   },
-  ".title5": {
+  ".title-5": {
     fontSize: "1.0625rem",
     lineHeight: 1.1764705882352942,
     letterSpacing: "0rem",
@@ -3976,14 +3976,16 @@ var ln = {
   600: "var(--rounded-600)",
   full: on,
   none: sn
-}, cn = {
-  "shadow-elevation1": "0rem 0.125rem 0.25rem -0.125rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.0625rem 0.375rem -0.0625rem rgb(var(--extended-shadow) / 10)",
-  "shadow-elevation2": "0rem 0.25rem 0.375rem -0.25rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.25rem 0.5rem -0.25rem rgb(var(--extended-shadow) / 10)",
-  "shadow-elevation3": "0rem 0.5rem 0.75rem -0.5rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.375rem 1.125rem -0.375rem rgb(var(--extended-shadow) / 10)",
-  "shadow-elevation4": "0rem 0.75rem 1.5rem -0.75rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.5rem 1.625rem -0.5rem rgb(var(--extended-shadow) / 10)"
 };
-const dn = "rgb(255 255 255 / <alpha-value>)";
-var un = {
+const cn = "0rem 0.125rem 0.25rem -0.125rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.0625rem 0.375rem -0.0625rem rgb(var(--extended-shadow) / 10)", dn = "0rem 0.25rem 0.375rem -0.25rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.25rem 0.5rem -0.25rem rgb(var(--extended-shadow) / 10)", un = "0rem 0.5rem 0.75rem -0.5rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.375rem 1.125rem -0.375rem rgb(var(--extended-shadow) / 10)", fn = "0rem 0.75rem 1.5rem -0.75rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.5rem 1.625rem -0.5rem rgb(var(--extended-shadow) / 10)";
+var mn = {
+  elevation1: cn,
+  elevation2: dn,
+  elevation3: un,
+  elevation4: fn
+};
+const pn = "rgb(255 255 255 / <alpha-value>)";
+var hn = {
   "primary-core": "rgb(var(--primary-core ) / <alpha-value>)",
   "primary-chroma": "rgb(var(--primary-chroma) / <alpha-value>)",
   "primary-dim": "rgb(var(--primary-dim) / <alpha-value>)",
@@ -4099,15 +4101,15 @@ var un = {
   "inverse-surface-on-low": "rgb(var(--inverse-surface-on-low) / <alpha-value>)",
   "inverse-surface-on-lowest": "rgb(var(--inverse-surface-on-lowest) / <alpha-value>)",
   "inverse-surface-on-accent": "rgb(var(--inverse-surface-on-accent) / <alpha-value>)",
-  white: dn,
-  "extended-shadow": "rgb(28 28 28 / <alpha-value>)"
-}, hn = (r) => {
+  white: pn,
+  "extended-shadow": "rgb(var(--extended-shadow) / <alpha-value>)"
+}, yn = (r) => {
   const t = new en();
-  return t.setColors(un), t.setBorderRadius(ln), t.setBoxShadow(cn), t.addPlugin(tn), t.addPlugin(an), r(t), t.build();
+  return t.setColors(hn), t.setBorderRadius(ln), t.setBoxShadow(mn), t.addPlugin(tn), t.addPlugin(an), r(t), t.build();
 };
 export {
-  mn as Button,
+  vn as Button,
   fr as Icon,
-  hn as createTailwindConfig,
-  pn as makeButton
+  yn as createTailwindConfig,
+  bn as makeButton
 };
