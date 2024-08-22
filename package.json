@@ -2,21 +2,7 @@
   "name": "@4partners/kit",
   "version": "1.0.5",
   "description": "",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./src/types/index.d.ts",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "files": [
-    "dist",
-    "types"
-  ],
   "scripts": {
     "build": "vite build"
   },

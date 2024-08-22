@@ -3977,7 +3977,7 @@ var ln = {
   full: on,
   none: sn
 };
-const cn = "0rem 0.125rem 0.25rem -0.125rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.0625rem 0.375rem -0.0625rem rgb(var(--extended-shadow) / 10)", dn = "0rem 0.25rem 0.375rem -0.25rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.25rem 0.5rem -0.25rem rgb(var(--extended-shadow) / 10)", un = "0rem 0.5rem 0.75rem -0.5rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.375rem 1.125rem -0.375rem rgb(var(--extended-shadow) / 10)", fn = "0rem 0.75rem 1.5rem -0.75rem rgb(var(--extended-shadow) / 20), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 15), 0rem 0.5rem 1.625rem -0.5rem rgb(var(--extended-shadow) / 10)";
+const cn = "0rem 0.125rem 0.25rem -0.125rem rgb(var(--extended-shadow) / 0.2), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 0.15), 0rem 0.0625rem 0.375rem -0.0625rem rgb(var(--extended-shadow) / 0.1)", dn = "0rem 0.25rem 0.375rem -0.25rem rgb(var(--extended-shadow) / 0.2), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 0.15), 0rem 0.25rem 0.5rem -0.25rem rgb(var(--extended-shadow) / 0.1)", un = "0rem 0.5rem 0.75rem -0.5rem rgb(var(--extended-shadow) / 0.2), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 0.15), 0rem 0.375rem 1.125rem -0.375rem rgb(var(--extended-shadow) / 0.1)", fn = "0rem 0.75rem 1.5rem -0.75rem rgb(var(--extended-shadow) / 0.2), 0rem 0rem 0.0625rem 0rem rgb(var(--extended-shadow) / 0.15), 0rem 0.5rem 1.625rem -0.5rem rgb(var(--extended-shadow) / 0.1)";
 var mn = {
   elevation1: cn,
   elevation2: dn,
