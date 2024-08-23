@@ -1,4 +1,4 @@
-import {tv, type VariantProps} from 'tailwind-variants';
+import { tv } from 'tailwind-variants';
 import tvConfig from '../../../tv-configs/button.json';
 import Icon from '../icon/Icon';
 import { cn } from '../../../helpers/tailwind';
@@ -7,13 +7,13 @@ import type { ButtonProps } from './types';
 const tvButton = tv(tvConfig);
 
 const {
-	base : slotBase ,
-	label : slotLabel,
-	iconWrapper : slotIconWrapper,
-	iconWrapperStart : slotIconWrapperStart,
-	iconWrapperEnd : slotIconWrapperEnd,
-	icon : slotIcon,
-}:any = tvButton();
+  base: slotBase,
+  label: slotLabel,
+  iconWrapper: slotIconWrapper,
+  iconWrapperStart: slotIconWrapperStart,
+  iconWrapperEnd: slotIconWrapperEnd,
+  icon: slotIcon
+} = tvButton()
 
 const Button = ({
 	label,
