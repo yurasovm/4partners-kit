@@ -1,6 +1,6 @@
 /// <reference types="react" />
-import * as react from 'react';
-import react__default from 'react';
+import * as React from 'react';
+import React__default, { FC } from 'react';
 
 type ColorConfig = Record<string, string | Record<string, string>>;
 type BorderRadiusConfig = Record<string, string>;
@@ -33,7 +33,7 @@ type IconType = '4partners' | 'a-bottom' | 'add1' | 'add-goods' | 'africa-nigeri
 
 type SizeType = '200' | '300' | '400' | '500' | '600';
 type VariantType = 'primary' | 'ghost' | 'addition' | 'secondary' | 'tertiary' | 'contrast';
-interface ButtonProps extends react__default.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React__default.ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string;
     size?: SizeType;
     variant?: VariantType;
@@ -42,14 +42,14 @@ interface ButtonProps extends react__default.ButtonHTMLAttributes<HTMLButtonElem
     className?: string;
 }
 
-declare const Button: ({ label, variant, size, iconStart, iconEnd, className, }: ButtonProps) => react.JSX.Element;
+declare const Button: FC<ButtonProps>;
 
 interface IconProps {
     name: string;
     size: number;
     className?: string;
 }
-declare const _default$1: ({ name, size, className }: IconProps) => react.JSX.Element;
+declare const _default$1: ({ name, size, className }: IconProps) => React.JSX.Element;
 
 declare function makeButton(props: any): string;
 
