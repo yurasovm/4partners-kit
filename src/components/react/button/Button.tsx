@@ -31,27 +31,27 @@ const Button: FC<ButtonProps> = ({
   }
 
   return (
-    <button className={ cn( slotBase( slotsProps ), className ) }>
-            {
-                iconStart &&
-                <span className={ cn( slotIconWrapper( slotsProps ), slotIconWrapperStart( slotsProps ) ) }>
-                    <Icon className={ cn( slotIcon( slotsProps ) ) } name={iconStart} size={ 24 } />
-                </span>
-            }
+    <button className={ cn(slotBase(slotsProps), className) }>
+        {
+            iconStart &&
+            <span className={ cn(slotIconWrapper(slotsProps), slotIconWrapperStart(slotsProps)) }>
+                <Icon className={ cn(slotIcon(slotsProps)) } name={iconStart} size={ 24 } />
+            </span>
+        }
 
-            {
-                label &&
-                <span className={ cn( slotLabel( slotsProps ) ) }>{ label }</span>
-            }
+        {
+            label &&
+            <span className={ cn(slotLabel(slotsProps)) }>{ label }</span>
+        }
 
-            {
-                iconEnd &&
-                <span className={ cn( slotIconWrapper( slotsProps ), slotIconWrapperEnd( slotsProps )  ) }>
-                    <Icon className={ cn( slotIcon( slotsProps ) ) } name={iconEnd} size={ 24 } />
-                </span>
-            }
-        </button>
-    )
+        {
+            iconEnd &&
+            <span className={ cn(slotIconWrapper(slotsProps), slotIconWrapperEnd(slotsProps)) }>
+                <Icon className={ cn(slotIcon(slotsProps)) } name={iconEnd} size={ 24 } />
+            </span>
+        }
+    </button>
+  )
 }
 
 export default Button
