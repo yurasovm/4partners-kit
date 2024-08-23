@@ -18,11 +18,12 @@ export default [
         format: 'esm'
       }
     ],
-    external: ['react'],
+    external: ['react', 'tailwind-variants', 'tailwind-merge', 'clsx'],
     plugins: [
       json(),
       typescript({
-        tsconfig: './tsconfig.json'
+        tsconfig: './tsconfig.json',
+        module: 'esnext'
       }),
       url(),
       terser()

@@ -1,6 +1,4 @@
-/// <reference types="react" />
-import * as React from 'react';
-import React__default, { FC } from 'react';
+import React, { FC } from 'react';
 
 type ColorConfig = Record<string, string | Record<string, string>>;
 type BorderRadiusConfig = Record<string, string>;
@@ -33,7 +31,7 @@ type IconType = '4partners' | 'a-bottom' | 'add1' | 'add-goods' | 'africa-nigeri
 
 type SizeType = '200' | '300' | '400' | '500' | '600';
 type VariantType = 'primary' | 'ghost' | 'addition' | 'secondary' | 'tertiary' | 'contrast';
-interface ButtonProps extends React__default.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string;
     size?: SizeType;
     variant?: VariantType;
