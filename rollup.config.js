@@ -1,8 +1,6 @@
 import typescript from '@rollup/plugin-typescript'
-import postcss from 'rollup-plugin-postcss'
 import url from '@rollup/plugin-url'
 import json from '@rollup/plugin-json'
-import svgr from '@svgr/rollup'
 import terser from '@rollup/plugin-terser'
 import dts from 'rollup-plugin-dts'
 import packageJson from './package.json' assert { type: 'json' }
@@ -22,18 +20,11 @@ export default [
     ],
     external: ['react'],
     plugins: [
-		json(),
+      json(),
       typescript({
-        tsconfig: './tsconfig.json',
+        tsconfig: './tsconfig.json'
       }),
-    //   postcss({
-    //     extract: 'index.css',
-    //     modules: true,
-    //     use: ['sass'],
-    //     minimize: true
-    //   }),
       url(),
-    //   svgr({ icon: true }),
       terser()
     ]
   },
